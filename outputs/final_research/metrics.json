@@ -1,0 +1,118 @@
+{
+  "dataset_root": "/path/to/EN2025",
+  "inventory": "inventory.csv",
+  "samples_selected": 1530,
+  "samples_processed": 1530,
+  "samples_failed": 0,
+  "class_counts": {
+    "benign": 919,
+    "ransomware": 611
+  },
+  "event_counts": {
+    "benign": 3917169,
+    "ransomware": 17225345
+  },
+  "methodology": {
+    "raw_reports": "streamed with ijson; no report is loaded in full",
+    "features": [
+      "events",
+      "processes",
+      "unique_apis",
+      "file_handle_observations",
+      "path_observations",
+      "create_open",
+      "successful_create_open",
+      "failed_create_open",
+      "writes",
+      "reads",
+      "deletes",
+      "renames",
+      "file_information",
+      "closes"
+    ],
+    "prefixes": [
+      0.1,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "damage_proxy": "observable write/delete/rename/file-information call counts before a model alarm; not physical damage",
+    "identity": "candidate handle/path evidence only; no physical-file claims",
+    "classifier": "Gaussian Naive Bayes on per-event prefix-normalized sample features"
+  },
+  "metrics": {
+    "split": {
+      "train": 1214,
+      "test": 316,
+      "rule": "sha256(sample_id) mod 5 == 0"
+    },
+    "prefixes": {
+      "0.1": {
+        "n_test": 316,
+        "true_positive": 78,
+        "true_negative": 200,
+        "false_positive": 3,
+        "false_negative": 35,
+        "accuracy": 0.879746835443038,
+        "balanced_accuracy": 0.8377435808012554,
+        "precision": 0.9629629629629629,
+        "recall": 0.6902654867256637,
+        "f1": 0.8041237113402061,
+        "roc_auc": 0.9255852478312045
+      },
+      "0.25": {
+        "n_test": 316,
+        "true_positive": 69,
+        "true_negative": 201,
+        "false_positive": 2,
+        "false_negative": 44,
+        "accuracy": 0.8544303797468354,
+        "balanced_accuracy": 0.8003836261388901,
+        "precision": 0.971830985915493,
+        "recall": 0.6106194690265486,
+        "f1": 0.7500000000000001,
+        "roc_auc": 0.9282444744757836
+      },
+      "0.5": {
+        "n_test": 316,
+        "true_positive": 71,
+        "true_negative": 201,
+        "false_positive": 2,
+        "false_negative": 42,
+        "accuracy": 0.8607594936708861,
+        "balanced_accuracy": 0.809233183661014,
+        "precision": 0.9726027397260274,
+        "recall": 0.6283185840707964,
+        "f1": 0.7634408602150538,
+        "roc_auc": 0.9227516456689481
+      },
+      "0.75": {
+        "n_test": 316,
+        "true_positive": 70,
+        "true_negative": 201,
+        "false_positive": 2,
+        "false_negative": 43,
+        "accuracy": 0.8575949367088608,
+        "balanced_accuracy": 0.804808404899952,
+        "precision": 0.9722222222222222,
+        "recall": 0.6194690265486725,
+        "f1": 0.7567567567567567,
+        "roc_auc": 0.9176075678974672
+      },
+      "1.0": {
+        "n_test": 316,
+        "true_positive": 70,
+        "true_negative": 200,
+        "false_positive": 3,
+        "false_negative": 43,
+        "accuracy": 0.8544303797468354,
+        "balanced_accuracy": 0.8023453507127599,
+        "precision": 0.958904109589041,
+        "recall": 0.6194690265486725,
+        "f1": 0.7526881720430106,
+        "roc_auc": 0.9027420550154758
+      }
+    }
+  }
+}

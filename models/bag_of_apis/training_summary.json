@@ -1,0 +1,18 @@
+{
+  "model_version": "bag-of-apis-v1",
+  "samples": 1530,
+  "splits": {
+    "train": 1059,
+    "validation": 235,
+    "test": 236
+  },
+  "vocabulary_size": 331,
+  "threshold": 0.7429269791849032,
+  "validation_benign_count": 156,
+  "test_true_positive": 79,
+  "test_false_positive": 1,
+  "test_ransomware_count": 91,
+  "test_recall": 0.8681318681318682,
+  "test_false_alarm_rate": 0.006896551724137931,
+  "split_rule": "sha256(sample_id) integer mod 100: train < 70, validation < 85, test >= 85"
+}

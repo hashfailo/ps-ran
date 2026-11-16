@@ -221,3 +221,15 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local web build dependencies
+web/frontend/node_modules/
+web/frontend/dist/
+.DS_Store
+
+# Large generated dataset artifacts
+outputs/**/events/
+outputs/**/unresolved_identities.jsonl
+outputs/phase0c1/nt*examples.json
+outputs/phase0c2/handle_lifecycle_examples.csv
+outputs/phase0d/handle_path_consistency.csv

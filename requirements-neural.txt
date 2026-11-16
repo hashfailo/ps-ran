@@ -1,0 +1,8 @@
+# Existing report streaming dependency.
+ijson>=3.2,<4
+# Compact memmap preprocessing.
+numpy>=1.26,<3
+# CPU, CUDA, and Apple Silicon MPS training/inference.
+torch>=2.2,<3
+# Optional notebook execution.
+jupyterlab>=4,<5
