@@ -1,0 +1,48 @@
+{
+  "ambiguity_count": 347691,
+  "dataset_root": "/path/to/EN2025",
+  "event_count": 1474631,
+  "file_handle_mapping": {
+    "explicit_only": true,
+    "uncertain_apis": [
+      "NtDuplicateObject",
+      "NtDeviceIoControlFile",
+      "NtQueryObject"
+    ]
+  },
+  "file_handle_observations": 223008,
+  "handle_counts": {
+    "candidate_reuse_after_close": 36720,
+    "close_without_create": 68490,
+    "failed_create_open_observations": 11504,
+    "file_handle_observations": 223008,
+    "handle_generations": 44650,
+    "non_file_handle_observations": 1117786,
+    "operation_first_generations": 646,
+    "operation_without_create": 479,
+    "post_close_reference": 167,
+    "repeated_close_observations": 25494,
+    "repeated_create_observations": 21233,
+    "successful_create_open_generations": 44004,
+    "successful_create_open_observations": 65082
+  },
+  "non_file_handle_observations": 1117786,
+  "ordering": {
+    "merged_serialized": false,
+    "primary": "stored process traversal and process-call order",
+    "reason": "timestamps cannot establish ground-truth chronology and no merged stream is emitted"
+  },
+  "samples_failed": 0,
+  "samples_processed": 20,
+  "samples_selected": 20,
+  "storage": {
+    "canonical": "JSONL",
+    "npy": "not used; variable-length event streams",
+    "parquet": {
+      "available": false,
+      "message": "Parquet unavailable; no silent format substitution.",
+      "writer": null
+    }
+  },
+  "unresolved_identity_records": 347691
+}
