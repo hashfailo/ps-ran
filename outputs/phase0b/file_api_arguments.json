@@ -1,0 +1,1623 @@
+{
+  "benign/001b7fa6b0ef402d2ab4f10403d6e9867c9d9c6493b99392f2cdb63bc2631422/report.json": {
+    "class": "benign",
+    "sample_directory": "001b7fa6b0ef402d2ab4f10403d6e9867c9d9c6493b99392f2cdb63bc2631422",
+    "apis": {
+      "NtCreateFile": {
+        "calls": 32,
+        "argument_names": {
+          "FileHandle": 32,
+          "DesiredAccess": 32,
+          "FileName": 32,
+          "CreateDisposition": 32,
+          "ShareAccess": 32,
+          "FileAttributes": 32,
+          "ExistedBefore": 32,
+          "StackPivoted": 32
+        },
+        "examples": [
+          {
+            "arguments": {
+              "FileHandle": "0x00000000",
+              "DesiredAccess": {
+                "value": "0x00120080",
+                "pretty_value": "FILE_READ_ATTRIBUTES|READ_CONTROL|SYNCHRONIZE"
+              },
+              "FileName": "C:\\Windows\\Microsoft.NET\\Framework\\v1.0.3705\\clr.dll",
+              "CreateDisposition": {
+                "value": "1",
+                "pretty_value": "FILE_OPEN"
+              },
+              "ShareAccess": {
+                "value": "7",
+                "pretty_value": "FILE_SHARE_READ|FILE_SHARE_WRITE|FILE_SHARE_DELETE"
+              },
+              "FileAttributes": "0x00000000",
+              "ExistedBefore": "no",
+              "StackPivoted": "no"
+            },
+            "return": "0xffffffffc0000034",
+            "status": false,
+            "repeated": 0,
+            "process_id": 3896
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x00000000",
+              "DesiredAccess": {
+                "value": "0x00120080",
+                "pretty_value": "FILE_READ_ATTRIBUTES|READ_CONTROL|SYNCHRONIZE"
+              },
+              "FileName": "C:\\Windows\\Microsoft.NET\\Framework\\v1.0.3705\\mscorwks.dll",
+              "CreateDisposition": {
+                "value": "1",
+                "pretty_value": "FILE_OPEN"
+              },
+              "ShareAccess": {
+                "value": "7",
+                "pretty_value": "FILE_SHARE_READ|FILE_SHARE_WRITE|FILE_SHARE_DELETE"
+              },
+              "FileAttributes": "0x00000000",
+              "ExistedBefore": "no",
+              "StackPivoted": "no"
+            },
+            "return": "0xffffffffc0000034",
+            "status": false,
+            "repeated": 0,
+            "process_id": 3896
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x00000000",
+              "DesiredAccess": {
+                "value": "0x00120080",
+                "pretty_value": "FILE_READ_ATTRIBUTES|READ_CONTROL|SYNCHRONIZE"
+              },
+              "FileName": "C:\\Windows\\Microsoft.NET\\Framework\\v1.1.4322\\clr.dll",
+              "CreateDisposition": {
+                "value": "1",
+                "pretty_value": "FILE_OPEN"
+              },
+              "ShareAccess": {
+                "value": "7",
+                "pretty_value": "FILE_SHARE_READ|FILE_SHARE_WRITE|FILE_SHARE_DELETE"
+              },
+              "FileAttributes": "0x00000000",
+              "ExistedBefore": "no",
+              "StackPivoted": "no"
+            },
+            "return": "0xffffffffc0000034",
+            "status": false,
+            "repeated": 0,
+            "process_id": 3896
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x00000000",
+              "DesiredAccess": {
+                "value": "0x00120080",
+                "pretty_value": "FILE_READ_ATTRIBUTES|READ_CONTROL|SYNCHRONIZE"
+              },
+              "FileName": "C:\\Windows\\Microsoft.NET\\Framework\\v1.1.4322\\mscorwks.dll",
+              "CreateDisposition": {
+                "value": "1",
+                "pretty_value": "FILE_OPEN"
+              },
+              "ShareAccess": {
+                "value": "7",
+                "pretty_value": "FILE_SHARE_READ|FILE_SHARE_WRITE|FILE_SHARE_DELETE"
+              },
+              "FileAttributes": "0x00000000",
+              "ExistedBefore": "no",
+              "StackPivoted": "no"
+            },
+            "return": "0xffffffffc0000034",
+            "status": false,
+            "repeated": 0,
+            "process_id": 3896
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x00000000",
+              "DesiredAccess": {
+                "value": "0x00120080",
+                "pretty_value": "FILE_READ_ATTRIBUTES|READ_CONTROL|SYNCHRONIZE"
+              },
+              "FileName": "C:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727\\clr.dll",
+              "CreateDisposition": {
+                "value": "1",
+                "pretty_value": "FILE_OPEN"
+              },
+              "ShareAccess": {
+                "value": "7",
+                "pretty_value": "FILE_SHARE_READ|FILE_SHARE_WRITE|FILE_SHARE_DELETE"
+              },
+              "FileAttributes": "0x00000000",
+              "ExistedBefore": "no",
+              "StackPivoted": "no"
+            },
+            "return": "0xffffffffc0000034",
+            "status": false,
+            "repeated": 0,
+            "process_id": 3896
+          }
+        ],
+        "file_information_class_values": []
+      },
+      "NtSetInformationFile": {
+        "calls": 2,
+        "argument_names": {
+          "FileHandle": 2,
+          "HandleName": 2,
+          "FileInformationClass": 2,
+          "FileInformation": 2
+        },
+        "examples": [
+          {
+            "arguments": {
+              "FileHandle": "0x0000050c",
+              "HandleName": "C:\\Users\\security\\AppData\\Local\\Temp\\2333.exe",
+              "FileInformationClass": {
+                "value": "14",
+                "pretty_value": "FilePositionInformation"
+              },
+              "FileInformation": "\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 3896
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x0000050c",
+              "HandleName": "C:\\Users\\security\\AppData\\Local\\Temp\\2333.exe",
+              "FileInformationClass": {
+                "value": "14",
+                "pretty_value": "FilePositionInformation"
+              },
+              "FileInformation": "\\x94\\x16\\x03\\x00\\x00\\x00\\x00\\x00"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 3896
+          }
+        ],
+        "file_information_class_values": [
+          {
+            "value": "14",
+            "pretty_value": "FilePositionInformation"
+          }
+        ]
+      }
+    }
+  },
+  "benign/00a71718fc9af677e8dba149386da3940688bb6ccf917ddea341294566077c83/report.json": {
+    "class": "benign",
+    "sample_directory": "00a71718fc9af677e8dba149386da3940688bb6ccf917ddea341294566077c83",
+    "apis": {
+      "NtCreateFile": {
+        "calls": 47,
+        "argument_names": {
+          "FileHandle": 47,
+          "DesiredAccess": 47,
+          "FileName": 47,
+          "CreateDisposition": 47,
+          "ShareAccess": 47,
+          "FileAttributes": 47,
+          "ExistedBefore": 47,
+          "StackPivoted": 47
+        },
+        "examples": [
+          {
+            "arguments": {
+              "FileHandle": "0x004de510",
+              "DesiredAccess": {
+                "value": "0x00120080",
+                "pretty_value": "FILE_READ_ATTRIBUTES|READ_CONTROL|SYNCHRONIZE"
+              },
+              "FileName": "C:\\Windows\\Microsoft.NET\\Framework64\\v2.0.50727\\clr.dll",
+              "CreateDisposition": {
+                "value": "1",
+                "pretty_value": "FILE_OPEN"
+              },
+              "ShareAccess": {
+                "value": "7",
+                "pretty_value": "FILE_SHARE_READ|FILE_SHARE_WRITE|FILE_SHARE_DELETE"
+              },
+              "FileAttributes": "0x00000000",
+              "ExistedBefore": "no",
+              "StackPivoted": "no"
+            },
+            "return": "0xffffffffc0000034",
+            "status": false,
+            "repeated": 0,
+            "process_id": 2008
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x000001d4",
+              "DesiredAccess": {
+                "value": "0x00120080",
+                "pretty_value": "FILE_READ_ATTRIBUTES|READ_CONTROL|SYNCHRONIZE"
+              },
+              "FileName": "C:\\Windows\\Microsoft.NET\\Framework64\\v2.0.50727\\mscorwks.dll",
+              "CreateDisposition": {
+                "value": "1",
+                "pretty_value": "FILE_OPEN"
+              },
+              "ShareAccess": {
+                "value": "7",
+                "pretty_value": "FILE_SHARE_READ|FILE_SHARE_WRITE|FILE_SHARE_DELETE"
+              },
+              "FileAttributes": "0x00000000",
+              "ExistedBefore": "yes",
+              "StackPivoted": "no"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 2008
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x000001d4",
+              "DesiredAccess": {
+                "value": "0x00120080",
+                "pretty_value": "FILE_READ_ATTRIBUTES|READ_CONTROL|SYNCHRONIZE"
+              },
+              "FileName": "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\clr.dll",
+              "CreateDisposition": {
+                "value": "1",
+                "pretty_value": "FILE_OPEN"
+              },
+              "ShareAccess": {
+                "value": "7",
+                "pretty_value": "FILE_SHARE_READ|FILE_SHARE_WRITE|FILE_SHARE_DELETE"
+              },
+              "FileAttributes": "0x00000000",
+              "ExistedBefore": "yes",
+              "StackPivoted": "no"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 2008
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x004a0000",
+              "DesiredAccess": {
+                "value": "0xffffffff80100080",
+                "pretty_value": "GENERIC_READ|FILE_READ_ATTRIBUTES|SYNCHRONIZE|0xffffffff00000000"
+              },
+              "FileName": "C:\\Users\\security\\AppData\\Local\\Temp\\2016.exe.config",
+              "CreateDisposition": {
+                "value": "1",
+                "pretty_value": "FILE_OPEN"
+              },
+              "ShareAccess": {
+                "value": "1",
+                "pretty_value": "FILE_SHARE_READ"
+              },
+              "FileAttributes": {
+                "value": "0x00000080",
+                "pretty_value": "FILE_ATTRIBUTE_NORMAL"
+              },
+              "ExistedBefore": "no",
+              "StackPivoted": "no"
+            },
+            "return": "0xffffffffc0000034",
+            "status": false,
+            "repeated": 0,
+            "process_id": 2008
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x000001d0",
+              "DesiredAccess": {
+                "value": "0xffffffff80100080",
+                "pretty_value": "GENERIC_READ|FILE_READ_ATTRIBUTES|SYNCHRONIZE|0xffffffff00000000"
+              },
+              "FileName": "C:\\Users\\security\\AppData\\Local\\Temp\\2016.exe",
+              "CreateDisposition": {
+                "value": "1",
+                "pretty_value": "FILE_OPEN"
+              },
+              "ShareAccess": {
+                "value": "1",
+                "pretty_value": "FILE_SHARE_READ"
+              },
+              "FileAttributes": "0x00000000",
+              "ExistedBefore": "yes",
+              "StackPivoted": "no"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 2008
+          }
+        ],
+        "file_information_class_values": []
+      },
+      "NtSetInformationFile": {
+        "calls": 6,
+        "argument_names": {
+          "FileHandle": 6,
+          "HandleName": 6,
+          "FileInformationClass": 6,
+          "FileInformation": 6
+        },
+        "examples": [
+          {
+            "arguments": {
+              "FileHandle": "0x00000270",
+              "HandleName": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WERFBF9.tmp",
+              "FileInformationClass": "64",
+              "FileInformation": "\\x07\\x00\\x00\\x00"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 2656
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x000002f4",
+              "HandleName": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WERFCF4.tmp",
+              "FileInformationClass": "64",
+              "FileInformation": "\\x07\\x00\\x00\\x00"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 2656
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x000001d8",
+              "HandleName": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WERFBF9.tmp.WERInternalMetadata.xml",
+              "FileInformationClass": "64",
+              "FileInformation": "\\x07\\x00\\x00\\x00"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 2656
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x000001d8",
+              "HandleName": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WERFCF4.tmp.xml",
+              "FileInformationClass": "64",
+              "FileInformation": "\\x07\\x00\\x00\\x00"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 2656
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x000001d8",
+              "HandleName": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WERFD03.tmp.csv",
+              "FileInformationClass": "64",
+              "FileInformation": "\\x07\\x00\\x00\\x00"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 2656
+          }
+        ],
+        "file_information_class_values": [
+          "64"
+        ]
+      },
+      "NtWriteFile": {
+        "calls": 42,
+        "argument_names": {
+          "FileHandle": 42,
+          "HandleName": 42,
+          "Buffer": 42,
+          "Length": 42,
+          "Status": 1
+        },
+        "examples": [
+          {
+            "arguments": {
+              "FileHandle": "0x00000270",
+              "HandleName": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WERFBF9.tmp.WERInternalMetadata.xml",
+              "Buffer": "<redacted>",
+              "Length": "2"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 2656
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x00000270",
+              "HandleName": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WERFBF9.tmp.WERInternalMetadata.xml",
+              "Buffer": "<redacted>",
+              "Length": "78"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 2656
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x00000270",
+              "HandleName": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WERFBF9.tmp.WERInternalMetadata.xml",
+              "Buffer": "<redacted>",
+              "Length": "4"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 2656
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x00000270",
+              "HandleName": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WERFBF9.tmp.WERInternalMetadata.xml",
+              "Buffer": "<redacted>",
+              "Length": "38"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 2656
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x00000270",
+              "HandleName": "C:\\ProgramData\\Microsoft\\Windows\\WER\\Temp\\WERFBF9.tmp.WERInternalMetadata.xml",
+              "Buffer": "<redacted>",
+              "Length": "4"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 2656
+          }
+        ],
+        "file_information_class_values": []
+      }
+    }
+  },
+  "benign/00fb683d8b6cb06b7dbd83431281b28fc203f0553cf5351bf6b1287634a50671/report.json": {
+    "class": "benign",
+    "sample_directory": "00fb683d8b6cb06b7dbd83431281b28fc203f0553cf5351bf6b1287634a50671",
+    "apis": {
+      "NtCreateFile": {
+        "calls": 184,
+        "argument_names": {
+          "FileHandle": 184,
+          "DesiredAccess": 184,
+          "FileName": 184,
+          "CreateDisposition": 184,
+          "ShareAccess": 184,
+          "FileAttributes": 184,
+          "ExistedBefore": 184,
+          "StackPivoted": 184
+        },
+        "examples": [
+          {
+            "arguments": {
+              "FileHandle": "0x01184890",
+              "DesiredAccess": {
+                "value": "0x00120080",
+                "pretty_value": "FILE_READ_ATTRIBUTES|READ_CONTROL|SYNCHRONIZE"
+              },
+              "FileName": "C:\\Windows\\Microsoft.NET\\Framework64\\v2.0.50727\\clr.dll",
+              "CreateDisposition": {
+                "value": "1",
+                "pretty_value": "FILE_OPEN"
+              },
+              "ShareAccess": {
+                "value": "7",
+                "pretty_value": "FILE_SHARE_READ|FILE_SHARE_WRITE|FILE_SHARE_DELETE"
+              },
+              "FileAttributes": "0x00000000",
+              "ExistedBefore": "no",
+              "StackPivoted": "no"
+            },
+            "return": "0xffffffffc0000034",
+            "status": false,
+            "repeated": 0,
+            "process_id": 3472
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x000001cc",
+              "DesiredAccess": {
+                "value": "0x00120080",
+                "pretty_value": "FILE_READ_ATTRIBUTES|READ_CONTROL|SYNCHRONIZE"
+              },
+              "FileName": "C:\\Windows\\Microsoft.NET\\Framework64\\v2.0.50727\\mscorwks.dll",
+              "CreateDisposition": {
+                "value": "1",
+                "pretty_value": "FILE_OPEN"
+              },
+              "ShareAccess": {
+                "value": "7",
+                "pretty_value": "FILE_SHARE_READ|FILE_SHARE_WRITE|FILE_SHARE_DELETE"
+              },
+              "FileAttributes": "0x00000000",
+              "ExistedBefore": "yes",
+              "StackPivoted": "no"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 3472
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x000001cc",
+              "DesiredAccess": {
+                "value": "0x00120080",
+                "pretty_value": "FILE_READ_ATTRIBUTES|READ_CONTROL|SYNCHRONIZE"
+              },
+              "FileName": "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\clr.dll",
+              "CreateDisposition": {
+                "value": "1",
+                "pretty_value": "FILE_OPEN"
+              },
+              "ShareAccess": {
+                "value": "7",
+                "pretty_value": "FILE_SHARE_READ|FILE_SHARE_WRITE|FILE_SHARE_DELETE"
+              },
+              "FileAttributes": "0x00000000",
+              "ExistedBefore": "yes",
+              "StackPivoted": "no"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 3472
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x01140000",
+              "DesiredAccess": {
+                "value": "0xffffffff80100080",
+                "pretty_value": "GENERIC_READ|FILE_READ_ATTRIBUTES|SYNCHRONIZE|0xffffffff00000000"
+              },
+              "FileName": "C:\\Users\\security\\AppData\\Local\\Temp\\2275.exe.config",
+              "CreateDisposition": {
+                "value": "1",
+                "pretty_value": "FILE_OPEN"
+              },
+              "ShareAccess": {
+                "value": "1",
+                "pretty_value": "FILE_SHARE_READ"
+              },
+              "FileAttributes": {
+                "value": "0x00000080",
+                "pretty_value": "FILE_ATTRIBUTE_NORMAL"
+              },
+              "ExistedBefore": "no",
+              "StackPivoted": "no"
+            },
+            "return": "0xffffffffc0000034",
+            "status": false,
+            "repeated": 0,
+            "process_id": 3472
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x000001c4",
+              "DesiredAccess": {
+                "value": "0xffffffff80100080",
+                "pretty_value": "GENERIC_READ|FILE_READ_ATTRIBUTES|SYNCHRONIZE|0xffffffff00000000"
+              },
+              "FileName": "C:\\Users\\security\\AppData\\Local\\Temp\\2275.exe",
+              "CreateDisposition": {
+                "value": "1",
+                "pretty_value": "FILE_OPEN"
+              },
+              "ShareAccess": {
+                "value": "1",
+                "pretty_value": "FILE_SHARE_READ"
+              },
+              "FileAttributes": "0x00000000",
+              "ExistedBefore": "yes",
+              "StackPivoted": "no"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 3472
+          }
+        ],
+        "file_information_class_values": []
+      },
+      "NtSetInformationFile": {
+        "calls": 16,
+        "argument_names": {
+          "FileHandle": 16,
+          "HandleName": 16,
+          "FileInformationClass": 16,
+          "FileInformation": 16
+        },
+        "examples": [
+          {
+            "arguments": {
+              "FileHandle": "0x000003c4",
+              "HandleName": "\\Device\\Serial0",
+              "FileInformationClass": {
+                "value": "30",
+                "pretty_value": "FileCompletionInformation"
+              },
+              "FileInformation": "\\xd0\\x03\\x00\\x00\\x00\\x00\\x00\\x00\\xf0\\x18\\x96\\xe2\\xfe\\x7f\\x00\\x00"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 3472
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x00000650",
+              "HandleName": "C:\\Users\\security\\AppData\\Local\\Microsoft\\Windows\\Explorer\\iconcache_idx.db",
+              "FileInformationClass": "74",
+              "FileInformation": "\\x02\\x00\\x00\\x00"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 3472
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x000006a4",
+              "HandleName": "C:\\Users\\security\\AppData\\Local\\Microsoft\\Windows\\Explorer\\iconcache_16.db",
+              "FileInformationClass": "74",
+              "FileInformation": "\\x02\\x00\\x00\\x00"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 3472
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x00000838",
+              "HandleName": "C:\\Users\\security\\AppData\\Roaming\\Microsoft\\Windows\\Recent\\AutomaticDestinations\\f01b4d95cf55d32a.automaticDestinations-ms",
+              "FileInformationClass": {
+                "value": "14",
+                "pretty_value": "FilePositionInformation"
+              },
+              "FileInformation": "\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 3472
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x00000838",
+              "HandleName": "C:\\Users\\security\\AppData\\Roaming\\Microsoft\\Windows\\Recent\\AutomaticDestinations\\f01b4d95cf55d32a.automaticDestinations-ms",
+              "FileInformationClass": {
+                "value": "14",
+                "pretty_value": "FilePositionInformation"
+              },
+              "FileInformation": "\\x00\\x0e\\x00\\x00\\x00\\x00\\x00\\x00"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 3472
+          }
+        ],
+        "file_information_class_values": [
+          {
+            "value": "30",
+            "pretty_value": "FileCompletionInformation"
+          },
+          "74",
+          {
+            "value": "14",
+            "pretty_value": "FilePositionInformation"
+          }
+        ]
+      },
+      "NtWriteFile": {
+        "calls": 33,
+        "argument_names": {
+          "FileHandle": 33,
+          "HandleName": 33,
+          "Buffer": 33,
+          "Length": 33
+        },
+        "examples": [
+          {
+            "arguments": {
+              "FileHandle": "0x000005e0",
+              "HandleName": "C:\\Users\\security\\AppData\\Local\\Temp\\232config.ini",
+              "Buffer": "<redacted>",
+              "Length": "27"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 3472
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x000005e8",
+              "HandleName": "C:\\Users\\security\\AppData\\Local\\Temp\\232config.ini",
+              "Buffer": "<redacted>",
+              "Length": "27"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 3472
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x000005e0",
+              "HandleName": "C:\\Users\\security\\AppData\\Local\\Temp\\232config.ini",
+              "Buffer": "<redacted>",
+              "Length": "27"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 3472
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x000005e8",
+              "HandleName": "C:\\Users\\security\\AppData\\Local\\Temp\\232config.ini",
+              "Buffer": "<redacted>",
+              "Length": "27"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 3472
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x000005e0",
+              "HandleName": "C:\\Users\\security\\AppData\\Local\\Temp\\232config.ini",
+              "Buffer": "<redacted>",
+              "Length": "27"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 3472
+          }
+        ],
+        "file_information_class_values": []
+      }
+    }
+  },
+  "ransomware/0085f13770b5b1ef96b1f5b57474c44f4a21ae8befef06a17cd254f75a071ec2/report.json": {
+    "class": "ransomware",
+    "sample_directory": "0085f13770b5b1ef96b1f5b57474c44f4a21ae8befef06a17cd254f75a071ec2",
+    "apis": {
+      "NtCreateFile": {
+        "calls": 615,
+        "argument_names": {
+          "FileHandle": 615,
+          "DesiredAccess": 615,
+          "FileName": 615,
+          "CreateDisposition": 615,
+          "ShareAccess": 615,
+          "FileAttributes": 615,
+          "ExistedBefore": 615,
+          "StackPivoted": 615
+        },
+        "examples": [
+          {
+            "arguments": {
+              "FileHandle": "0x0000029c",
+              "DesiredAccess": {
+                "value": "0xffffffff80100080",
+                "pretty_value": "GENERIC_READ|FILE_READ_ATTRIBUTES|SYNCHRONIZE|0xffffffff00000000"
+              },
+              "FileName": "C:\\Windows\\Globalization\\Sorting\\sortdefault.nls",
+              "CreateDisposition": {
+                "value": "1",
+                "pretty_value": "FILE_OPEN"
+              },
+              "ShareAccess": {
+                "value": "1",
+                "pretty_value": "FILE_SHARE_READ"
+              },
+              "FileAttributes": {
+                "value": "0x00000080",
+                "pretty_value": "FILE_ATTRIBUTE_NORMAL"
+              },
+              "ExistedBefore": "yes",
+              "StackPivoted": "no"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 2456
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x00000000",
+              "DesiredAccess": {
+                "value": "0x00100001",
+                "pretty_value": "FILE_READ_ACCESS|SYNCHRONIZE"
+              },
+              "FileName": "C:\\ProgramData",
+              "CreateDisposition": {
+                "value": "2",
+                "pretty_value": "FILE_CREATE"
+              },
+              "ShareAccess": {
+                "value": "3",
+                "pretty_value": "FILE_SHARE_READ|FILE_SHARE_WRITE"
+              },
+              "FileAttributes": {
+                "value": "0x00000080",
+                "pretty_value": "FILE_ATTRIBUTE_NORMAL"
+              },
+              "ExistedBefore": "yes",
+              "StackPivoted": "no"
+            },
+            "return": "0xffffffffc0000035",
+            "status": false,
+            "repeated": 0,
+            "process_id": 2456
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x00000398",
+              "DesiredAccess": {
+                "value": "0x00100080",
+                "pretty_value": "FILE_READ_ATTRIBUTES|SYNCHRONIZE"
+              },
+              "FileName": "\\??\\Nsi",
+              "CreateDisposition": {
+                "value": "1",
+                "pretty_value": "FILE_OPEN"
+              },
+              "ShareAccess": {
+                "value": "3",
+                "pretty_value": "FILE_SHARE_READ|FILE_SHARE_WRITE"
+              },
+              "FileAttributes": "0x00000000",
+              "ExistedBefore": "no",
+              "StackPivoted": "no"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 2456
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x00000000",
+              "DesiredAccess": {
+                "value": "0x00100001",
+                "pretty_value": "FILE_READ_ACCESS|SYNCHRONIZE"
+              },
+              "FileName": "C:\\Users\\security",
+              "CreateDisposition": {
+                "value": "2",
+                "pretty_value": "FILE_CREATE"
+              },
+              "ShareAccess": {
+                "value": "3",
+                "pretty_value": "FILE_SHARE_READ|FILE_SHARE_WRITE"
+              },
+              "FileAttributes": {
+                "value": "0x00000080",
+                "pretty_value": "FILE_ATTRIBUTE_NORMAL"
+              },
+              "ExistedBefore": "yes",
+              "StackPivoted": "no"
+            },
+            "return": "0xffffffffc0000035",
+            "status": false,
+            "repeated": 0,
+            "process_id": 2456
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x00000000",
+              "DesiredAccess": {
+                "value": "0x00100001",
+                "pretty_value": "FILE_READ_ACCESS|SYNCHRONIZE"
+              },
+              "FileName": "C:\\Users\\security\\AppData\\Local",
+              "CreateDisposition": {
+                "value": "2",
+                "pretty_value": "FILE_CREATE"
+              },
+              "ShareAccess": {
+                "value": "3",
+                "pretty_value": "FILE_SHARE_READ|FILE_SHARE_WRITE"
+              },
+              "FileAttributes": {
+                "value": "0x00000080",
+                "pretty_value": "FILE_ATTRIBUTE_NORMAL"
+              },
+              "ExistedBefore": "yes",
+              "StackPivoted": "no"
+            },
+            "return": "0xffffffffc0000035",
+            "status": false,
+            "repeated": 0,
+            "process_id": 2456
+          }
+        ],
+        "file_information_class_values": []
+      },
+      "NtWriteFile": {
+        "calls": 947,
+        "argument_names": {
+          "FileHandle": 947,
+          "HandleName": 947,
+          "Buffer": 947,
+          "Length": 947,
+          "Status": 3
+        },
+        "examples": [
+          {
+            "arguments": {
+              "FileHandle": "0x000004bc",
+              "HandleName": "C:\\KRAB-DECRYPT.txt",
+              "Buffer": "<redacted>",
+              "Length": "8110"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 2456
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x000004f8",
+              "HandleName": "\\Device\\NamedPipe\\wkssvc",
+              "Buffer": "<redacted>",
+              "Length": "116"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 2456
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x000004f0",
+              "HandleName": "C:\\$Recycle.Bin\\KRAB-DECRYPT.txt",
+              "Buffer": "<redacted>",
+              "Length": "8110"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 2456
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x0000052c",
+              "HandleName": "C:\\$Recycle.Bin\\S-1-5-18\\KRAB-DECRYPT.txt",
+              "Buffer": "<redacted>",
+              "Length": "8110"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 2456
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x00000530",
+              "HandleName": "C:\\$Recycle.Bin\\S-1-5-21-1494664745-2906409286-1981230276-1000\\KRAB-DECRYPT.txt",
+              "Buffer": "<redacted>",
+              "Length": "8110"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 2456
+          }
+        ],
+        "file_information_class_values": []
+      },
+      "NtSetInformationFile": {
+        "calls": 933,
+        "argument_names": {
+          "FileHandle": 933,
+          "HandleName": 933,
+          "FileInformationClass": 933,
+          "FileInformation": 933
+        },
+        "examples": [
+          {
+            "arguments": {
+              "FileHandle": "0x000004f8",
+              "HandleName": "\\Device\\NamedPipe\\wkssvc",
+              "FileInformationClass": {
+                "value": "23",
+                "pretty_value": "FilePipeInformation"
+              },
+              "FileInformation": "\\x01\\x00\\x00\\x00\\x00\\x00\\x00\\x00"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 2456
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x000004f8",
+              "HandleName": "\\Device\\NamedPipe\\wkssvc",
+              "FileInformationClass": {
+                "value": "41",
+                "pretty_value": "FileIoStatusBlockRangeInformation"
+              },
+              "FileInformation": "\\x02\\x00\\x00\\x00"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 2456
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x000004f8",
+              "HandleName": "\\Device\\NamedPipe\\wkssvc",
+              "FileInformationClass": {
+                "value": "30",
+                "pretty_value": "FileCompletionInformation"
+              },
+              "FileInformation": "\\xa0\\x03\\x00\\x00p\\xb4\\x88\\x00"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 2456
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x00000524",
+              "HandleName": "C:\\$WINDOWS.~BT\\Sources\\Panther\\diagerr.xml",
+              "FileInformationClass": {
+                "value": "14",
+                "pretty_value": "FilePositionInformation"
+              },
+              "FileInformation": "\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 2456
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x00000524",
+              "HandleName": "C:\\$WINDOWS.~BT\\Sources\\Panther\\diagwrn.xml",
+              "FileInformationClass": {
+                "value": "14",
+                "pretty_value": "FilePositionInformation"
+              },
+              "FileInformation": "\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 2456
+          }
+        ],
+        "file_information_class_values": [
+          {
+            "value": "23",
+            "pretty_value": "FilePipeInformation"
+          },
+          {
+            "value": "41",
+            "pretty_value": "FileIoStatusBlockRangeInformation"
+          },
+          {
+            "value": "30",
+            "pretty_value": "FileCompletionInformation"
+          },
+          {
+            "value": "14",
+            "pretty_value": "FilePositionInformation"
+          }
+        ]
+      }
+    }
+  },
+  "ransomware/0162641163a30a2edff787eeecc733ab1de46f03e213743dc768d39eb3075985/report.json": {
+    "class": "ransomware",
+    "sample_directory": "0162641163a30a2edff787eeecc733ab1de46f03e213743dc768d39eb3075985",
+    "apis": {
+      "NtCreateFile": {
+        "calls": 73,
+        "argument_names": {
+          "FileHandle": 73,
+          "DesiredAccess": 73,
+          "FileName": 73,
+          "CreateDisposition": 73,
+          "ShareAccess": 73,
+          "FileAttributes": 73,
+          "ExistedBefore": 73,
+          "StackPivoted": 73
+        },
+        "examples": [
+          {
+            "arguments": {
+              "FileHandle": "0x00000000",
+              "DesiredAccess": {
+                "value": "0x00100080",
+                "pretty_value": "FILE_READ_ATTRIBUTES|SYNCHRONIZE"
+              },
+              "FileName": "C:\\Windows\\System32\\94d37a506cfe248163e871ef5f3a11eac854d0ee09dacd72995804b01e24c3a5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA...<truncated>",
+              "CreateDisposition": {
+                "value": "1",
+                "pretty_value": "FILE_OPEN"
+              },
+              "ShareAccess": "0",
+              "FileAttributes": "0x00000000",
+              "ExistedBefore": "no",
+              "StackPivoted": "no"
+            },
+            "return": "0xffffffffc0000033",
+            "status": false,
+            "repeated": 0,
+            "process_id": 264
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x000002b0",
+              "DesiredAccess": {
+                "value": "0xffffffff80100080",
+                "pretty_value": "GENERIC_READ|FILE_READ_ATTRIBUTES|SYNCHRONIZE|0xffffffff00000000"
+              },
+              "FileName": "C:\\Windows\\System32\\mswsock.dll",
+              "CreateDisposition": {
+                "value": "1",
+                "pretty_value": "FILE_OPEN"
+              },
+              "ShareAccess": {
+                "value": "5",
+                "pretty_value": "FILE_SHARE_READ|FILE_SHARE_DELETE"
+              },
+              "FileAttributes": "0x00000000",
+              "ExistedBefore": "yes",
+              "StackPivoted": "no"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 264
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x000002b0",
+              "DesiredAccess": {
+                "value": "0xffffffff80100080",
+                "pretty_value": "GENERIC_READ|FILE_READ_ATTRIBUTES|SYNCHRONIZE|0xffffffff00000000"
+              },
+              "FileName": "C:\\Windows\\System32\\mswsock.dll",
+              "CreateDisposition": {
+                "value": "1",
+                "pretty_value": "FILE_OPEN"
+              },
+              "ShareAccess": {
+                "value": "5",
+                "pretty_value": "FILE_SHARE_READ|FILE_SHARE_DELETE"
+              },
+              "FileAttributes": "0x00000000",
+              "ExistedBefore": "yes",
+              "StackPivoted": "no"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 264
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x000002b0",
+              "DesiredAccess": {
+                "value": "0xffffffff80100080",
+                "pretty_value": "GENERIC_READ|FILE_READ_ATTRIBUTES|SYNCHRONIZE|0xffffffff00000000"
+              },
+              "FileName": "C:\\Windows\\System32\\wshqos.dll",
+              "CreateDisposition": {
+                "value": "1",
+                "pretty_value": "FILE_OPEN"
+              },
+              "ShareAccess": {
+                "value": "5",
+                "pretty_value": "FILE_SHARE_READ|FILE_SHARE_DELETE"
+              },
+              "FileAttributes": "0x00000000",
+              "ExistedBefore": "yes",
+              "StackPivoted": "no"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 264
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x000002b0",
+              "DesiredAccess": {
+                "value": "0xffffffff80100080",
+                "pretty_value": "GENERIC_READ|FILE_READ_ATTRIBUTES|SYNCHRONIZE|0xffffffff00000000"
+              },
+              "FileName": "C:\\Windows\\System32\\wshqos.dll",
+              "CreateDisposition": {
+                "value": "1",
+                "pretty_value": "FILE_OPEN"
+              },
+              "ShareAccess": {
+                "value": "5",
+                "pretty_value": "FILE_SHARE_READ|FILE_SHARE_DELETE"
+              },
+              "FileAttributes": "0x00000000",
+              "ExistedBefore": "yes",
+              "StackPivoted": "no"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 264
+          }
+        ],
+        "file_information_class_values": []
+      }
+    }
+  },
+  "ransomware/0178461a8373f6147042d0c7ca7febb020dc4f600e639d6a53d343c02899bc9a/report.json": {
+    "class": "ransomware",
+    "sample_directory": "0178461a8373f6147042d0c7ca7febb020dc4f600e639d6a53d343c02899bc9a",
+    "apis": {
+      "NtCreateFile": {
+        "calls": 121,
+        "argument_names": {
+          "FileHandle": 121,
+          "DesiredAccess": 121,
+          "FileName": 121,
+          "CreateDisposition": 121,
+          "ShareAccess": 121,
+          "FileAttributes": 121,
+          "ExistedBefore": 121,
+          "StackPivoted": 121
+        },
+        "examples": [
+          {
+            "arguments": {
+              "FileHandle": "0x01134940",
+              "DesiredAccess": {
+                "value": "0x00120080",
+                "pretty_value": "FILE_READ_ATTRIBUTES|READ_CONTROL|SYNCHRONIZE"
+              },
+              "FileName": "C:\\Windows\\Microsoft.NET\\Framework64\\v2.0.50727\\clr.dll",
+              "CreateDisposition": {
+                "value": "1",
+                "pretty_value": "FILE_OPEN"
+              },
+              "ShareAccess": {
+                "value": "7",
+                "pretty_value": "FILE_SHARE_READ|FILE_SHARE_WRITE|FILE_SHARE_DELETE"
+              },
+              "FileAttributes": "0x00000000",
+              "ExistedBefore": "no",
+              "StackPivoted": "no"
+            },
+            "return": "0xffffffffc0000034",
+            "status": false,
+            "repeated": 0,
+            "process_id": 3468
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x000001dc",
+              "DesiredAccess": {
+                "value": "0x00120080",
+                "pretty_value": "FILE_READ_ATTRIBUTES|READ_CONTROL|SYNCHRONIZE"
+              },
+              "FileName": "C:\\Windows\\Microsoft.NET\\Framework64\\v2.0.50727\\mscorwks.dll",
+              "CreateDisposition": {
+                "value": "1",
+                "pretty_value": "FILE_OPEN"
+              },
+              "ShareAccess": {
+                "value": "7",
+                "pretty_value": "FILE_SHARE_READ|FILE_SHARE_WRITE|FILE_SHARE_DELETE"
+              },
+              "FileAttributes": "0x00000000",
+              "ExistedBefore": "yes",
+              "StackPivoted": "no"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 3468
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x000001dc",
+              "DesiredAccess": {
+                "value": "0x00120080",
+                "pretty_value": "FILE_READ_ATTRIBUTES|READ_CONTROL|SYNCHRONIZE"
+              },
+              "FileName": "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\clr.dll",
+              "CreateDisposition": {
+                "value": "1",
+                "pretty_value": "FILE_OPEN"
+              },
+              "ShareAccess": {
+                "value": "7",
+                "pretty_value": "FILE_SHARE_READ|FILE_SHARE_WRITE|FILE_SHARE_DELETE"
+              },
+              "FileAttributes": "0x00000000",
+              "ExistedBefore": "yes",
+              "StackPivoted": "no"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 3468
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x010f0000",
+              "DesiredAccess": {
+                "value": "0xffffffff80100080",
+                "pretty_value": "GENERIC_READ|FILE_READ_ATTRIBUTES|SYNCHRONIZE|0xffffffff00000000"
+              },
+              "FileName": "C:\\Users\\security\\AppData\\Local\\Temp\\0178461a8373f6147042.exe.config",
+              "CreateDisposition": {
+                "value": "1",
+                "pretty_value": "FILE_OPEN"
+              },
+              "ShareAccess": {
+                "value": "1",
+                "pretty_value": "FILE_SHARE_READ"
+              },
+              "FileAttributes": {
+                "value": "0x00000080",
+                "pretty_value": "FILE_ATTRIBUTE_NORMAL"
+              },
+              "ExistedBefore": "no",
+              "StackPivoted": "no"
+            },
+            "return": "0xffffffffc0000034",
+            "status": false,
+            "repeated": 0,
+            "process_id": 3468
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x000001d8",
+              "DesiredAccess": {
+                "value": "0xffffffff80100080",
+                "pretty_value": "GENERIC_READ|FILE_READ_ATTRIBUTES|SYNCHRONIZE|0xffffffff00000000"
+              },
+              "FileName": "C:\\Users\\security\\AppData\\Local\\Temp\\0178461a8373f6147042.exe",
+              "CreateDisposition": {
+                "value": "1",
+                "pretty_value": "FILE_OPEN"
+              },
+              "ShareAccess": {
+                "value": "1",
+                "pretty_value": "FILE_SHARE_READ"
+              },
+              "FileAttributes": "0x00000000",
+              "ExistedBefore": "yes",
+              "StackPivoted": "no"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 3468
+          }
+        ],
+        "file_information_class_values": []
+      },
+      "CopyFileW": {
+        "calls": 1,
+        "argument_names": {
+          "ExistingFileName": 1,
+          "NewFileName": 1,
+          "ExistedBefore": 1
+        },
+        "examples": [
+          {
+            "arguments": {
+              "ExistingFileName": "C:\\Users\\security\\AppData\\Local\\Temp\\0178461a8373f6147042.exe",
+              "NewFileName": "C:\\Users\\security\\AppData\\Roaming\\explorer.exe",
+              "ExistedBefore": "no"
+            },
+            "return": "0x00000001",
+            "status": true,
+            "repeated": 0,
+            "process_id": 3468
+          }
+        ],
+        "file_information_class_values": []
+      },
+      "NtWriteFile": {
+        "calls": 52,
+        "argument_names": {
+          "FileHandle": 52,
+          "HandleName": 52,
+          "Buffer": 52,
+          "Length": 52,
+          "Status": 1
+        },
+        "examples": [
+          {
+            "arguments": {
+              "FileHandle": "0x00000414",
+              "HandleName": "C:\\Users\\security\\AppData\\Local\\Microsoft\\CLR_v4.0\\UsageLogs\\0178461a8373f6147042.exe.log",
+              "Buffer": "<redacted>",
+              "Length": "226"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 3468
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x000003c8",
+              "HandleName": "C:\\Users\\security\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\explorer.url",
+              "Buffer": "<redacted>",
+              "Length": "150"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 1296
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x000003fc",
+              "HandleName": "C:\\Users\\security\\Desktop\\csnas_tech_15.2.0.15290_x64.exe",
+              "Buffer": "<redacted>",
+              "Length": "4096"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 1296
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x000003fc",
+              "HandleName": "C:\\Users\\security\\Desktop\\csnas_tech_15.2.0.15290_x64.exe",
+              "Buffer": "<redacted>",
+              "Length": "4096"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 1296
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x000003fc",
+              "HandleName": "C:\\Users\\security\\Desktop\\csnas_tech_15.2.0.15290_x64.exe",
+              "Buffer": "<redacted>",
+              "Length": "4096"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 1296
+          }
+        ],
+        "file_information_class_values": []
+      },
+      "NtSetInformationFile": {
+        "calls": 26,
+        "argument_names": {
+          "FileHandle": 26,
+          "HandleName": 26,
+          "FileInformationClass": 26,
+          "FileInformation": 26
+        },
+        "examples": [
+          {
+            "arguments": {
+              "FileHandle": "0x000003f4",
+              "HandleName": "C:\\Users\\security\\Desktop\\csnas_tech_15.2.0.15290_x64.exe",
+              "FileInformationClass": {
+                "value": "4",
+                "pretty_value": "FileBasicInformation"
+              },
+              "FileInformation": "\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x80\\x00\\x00\\x00\\x00\\x00\\x00\\x00"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 1296
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x000003e0",
+              "HandleName": "C:\\Users\\security\\Desktop\\desktop.ini",
+              "FileInformationClass": {
+                "value": "4",
+                "pretty_value": "FileBasicInformation"
+              },
+              "FileInformation": "\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x80\\x00\\x00\\x00\\x00\\x00\\x00\\x00"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 1296
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x00000338",
+              "HandleName": "C:\\Users\\security\\Desktop\\disable-defender.exe",
+              "FileInformationClass": {
+                "value": "4",
+                "pretty_value": "FileBasicInformation"
+              },
+              "FileInformation": "\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x80\\x00\\x00\\x00\\x00\\x00\\x00\\x00"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 1296
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x000003cc",
+              "HandleName": "C:\\Users\\security\\Desktop\\target_benign_samples_bin.zip",
+              "FileInformationClass": {
+                "value": "4",
+                "pretty_value": "FileBasicInformation"
+              },
+              "FileInformation": "\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x80\\x00\\x00\\x00\\x00\\x00\\x00\\x00"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 1296
+          },
+          {
+            "arguments": {
+              "FileHandle": "0x000001bc",
+              "HandleName": "C:\\Users\\security\\Desktop\\test.txt",
+              "FileInformationClass": {
+                "value": "4",
+                "pretty_value": "FileBasicInformation"
+              },
+              "FileInformation": "\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x80\\x00\\x00\\x00\\x00\\x00\\x00\\x00"
+            },
+            "return": "0x00000000",
+            "status": true,
+            "repeated": 0,
+            "process_id": 1296
+          }
+        ],
+        "file_information_class_values": [
+          {
+            "value": "4",
+            "pretty_value": "FileBasicInformation"
+          }
+        ]
+      }
+    }
+  }
+}

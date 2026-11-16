@@ -1,0 +1,11 @@
+class,sequence_type,count,interpretation
+benign,close_create,1507,close before later create in stored process-call order
+benign,create_close,9133,create before later close in stored process-call order
+benign,create_close_create,1004,"create, close, then create for the same key in stored order"
+benign,multiple_closes,29049,close after a prior close without intervening create
+benign,operations_between_create_close,872,write/set-information events between candidate create and close
+ransomware,close_create,14476,close before later create in stored process-call order
+ransomware,create_close,32744,create before later close in stored process-call order
+ransomware,create_close_create,12463,"create, close, then create for the same key in stored order"
+ransomware,multiple_closes,72831,close after a prior close without intervening create
+ransomware,operations_between_create_close,14905,write/set-information events between candidate create and close

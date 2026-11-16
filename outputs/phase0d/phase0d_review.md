@@ -1,0 +1,294 @@
+# Phase 0D File Identity and Path Audit
+
+Exactly the 20 report paths in the Phase 0C manifest were processed one at a time. This is an observational audit; it does not normalize paths, count damage, classify APIs, or infer file identity.
+
+## Benign
+
+- Reports: 10
+- Target file-related calls: 64589
+- Candidate handles with one path: 2192
+- Candidate handles with multiple paths: 1059
+- Candidate handles with no observed path: 4112
+- Distinct raw path strings: 1378
+- Raw paths associated with multiple candidate handles: 1174
+- Target calls without usable path: 36683
+- Target calls without usable handle: 11157
+- Target calls with both usable path and handle: 16749
+
+### API observations
+
+- `CopyFileW`: 6 calls; path calls=6, handle calls=0, both=0
+- `CreateDirectoryW`: 11 calls; path calls=11, handle calls=0, both=0
+- `CreateProcessW`: 31 calls; path calls=0, handle calls=31, both=0
+- `CreateThread`: 209 calls; path calls=209, handle calls=0, both=0
+- `DeleteFileW`: 179 calls; path calls=179, handle calls=0, both=0
+- `DllLoadNotification`: 1527 calls; path calls=1527, handle calls=0, both=0
+- `FindFirstFileExW`: 3 calls; path calls=3, handle calls=0, both=0
+- `GetDiskFreeSpaceExW`: 3 calls; path calls=3, handle calls=0, both=0
+- `GetFileVersionInfoSizeW`: 32 calls; path calls=31, handle calls=0, both=0
+- `GetFileVersionInfoW`: 31 calls; path calls=31, handle calls=0, both=0
+- `InternetCloseHandle`: 2 calls; path calls=0, handle calls=2, both=0
+- `InternetOpenUrlW`: 2 calls; path calls=0, handle calls=2, both=0
+- `LdrGetDllHandle`: 910 calls; path calls=910, handle calls=910, both=910
+- `LdrGetProcedureAddress`: 22 calls; path calls=22, handle calls=22, both=22
+- `LdrGetProcedureAddressForCaller`: 6761 calls; path calls=6761, handle calls=6761, both=6761
+- `LdrLoadDll`: 1532 calls; path calls=1532, handle calls=0, both=0
+- `LoadLibraryExW`: 617 calls; path calls=617, handle calls=0, both=0
+- `MoveFileWithProgressTransactedW`: 2 calls; path calls=2, handle calls=0, both=0
+- `NtAllocateVirtualMemory`: 14170 calls; path calls=0, handle calls=14170, both=0
+- `NtAllocateVirtualMemoryEx`: 42 calls; path calls=0, handle calls=42, both=0
+- `NtClose`: 34020 calls; path calls=0, handle calls=34020, both=0
+- `NtCreateEvent`: 10 calls; path calls=0, handle calls=10, both=0
+- `NtCreateFile`: 7278 calls; path calls=7278, handle calls=7278, both=7278
+- `NtCreateKey`: 13999 calls; path calls=0, handle calls=13999, both=0
+- `NtCreateMutant`: 152 calls; path calls=0, handle calls=152, both=0
+- `NtCreateNamedPipeFile`: 58 calls; path calls=0, handle calls=58, both=0
+- `NtCreateSection`: 3758 calls; path calls=0, handle calls=3758, both=0
+- `NtCreateThreadEx`: 26 calls; path calls=0, handle calls=26, both=0
+- `NtCreateTransaction`: 4 calls; path calls=0, handle calls=4, both=0
+- `NtCreateUserProcess`: 76 calls; path calls=76, handle calls=76, both=76
+- `NtDeviceIoControlFile`: 6910 calls; path calls=0, handle calls=6910, both=0
+- `NtDuplicateObject`: 618 calls; path calls=0, handle calls=618, both=0
+- `NtEnumerateKey`: 11010 calls; path calls=0, handle calls=11010, both=0
+- `NtEnumerateValueKey`: 9991 calls; path calls=0, handle calls=9991, both=0
+- `NtFreeVirtualMemory`: 2688 calls; path calls=0, handle calls=2688, both=0
+- `NtGetContextThread`: 14 calls; path calls=0, handle calls=14, both=0
+- `NtMapViewOfSection`: 4027 calls; path calls=0, handle calls=4027, both=0
+- `NtOpenDirectoryObject`: 88 calls; path calls=0, handle calls=88, both=0
+- `NtOpenEvent`: 82 calls; path calls=0, handle calls=82, both=0
+- `NtOpenFile`: 5457 calls; path calls=5403, handle calls=5457, both=5403
+- `NtOpenKey`: 5095 calls; path calls=0, handle calls=5095, both=0
+- `NtOpenKeyEx`: 36309 calls; path calls=0, handle calls=36309, both=0
+- `NtOpenMutant`: 11 calls; path calls=0, handle calls=11, both=0
+- `NtOpenProcess`: 542 calls; path calls=0, handle calls=542, both=0
+- `NtOpenProcessToken`: 8297 calls; path calls=0, handle calls=8297, both=0
+- `NtOpenSection`: 157 calls; path calls=0, handle calls=157, both=0
+- `NtOpenThread`: 16 calls; path calls=0, handle calls=16, both=0
+- `NtProtectVirtualMemory`: 3152 calls; path calls=2978, handle calls=3152, both=2978
+- `NtQueryAttributesFile`: 11157 calls; path calls=11157, handle calls=0, both=0
+- `NtQueryFullAttributesFile`: 9021 calls; path calls=9021, handle calls=0, both=0
+- `NtQueryInformationFile`: 12038 calls; path calls=12038, handle calls=12038, both=12038
+- `NtQueryInformationThread`: 1095 calls; path calls=0, handle calls=1095, both=0
+- `NtQueryKey`: 32213 calls; path calls=0, handle calls=32213, both=0
+- `NtQueryMultipleValueKey`: 62 calls; path calls=0, handle calls=62, both=0
+- `NtQueryValueKey`: 25389 calls; path calls=0, handle calls=25389, both=0
+- `NtQueueApcThread`: 16 calls; path calls=0, handle calls=16, both=0
+- `NtReadFile`: 8308 calls; path calls=8215, handle calls=8308, both=8215
+- `NtReadVirtualMemory`: 828 calls; path calls=0, handle calls=828, both=0
+- `NtReleaseMutant`: 4134 calls; path calls=0, handle calls=4134, both=0
+- `NtResumeThread`: 195 calls; path calls=0, handle calls=195, both=0
+- `NtSetContextThread`: 1 calls; path calls=0, handle calls=1, both=0
+- `NtSetInformationFile`: 3436 calls; path calls=3436, handle calls=3436, both=3436
+- `NtSetValueKey`: 119 calls; path calls=0, handle calls=119, both=0
+- `NtSuspendThread`: 8 calls; path calls=0, handle calls=8, both=0
+- `NtTerminateProcess`: 95 calls; path calls=0, handle calls=95, both=0
+- `NtTerminateThread`: 150 calls; path calls=0, handle calls=150, both=0
+- `NtUnmapViewOfSection`: 850 calls; path calls=0, handle calls=850, both=0
+- `NtUnmapViewOfSectionEx`: 3327 calls; path calls=0, handle calls=3327, both=0
+- `NtWaitForSingleObject`: 8596 calls; path calls=0, handle calls=8596, both=0
+- `NtWriteFile`: 3241 calls; path calls=632, handle calls=3241, both=632
+- `NtWriteVirtualMemory`: 70 calls; path calls=0, handle calls=70, both=0
+- `PostMessageW`: 4735 calls; path calls=0, handle calls=4735, both=0
+- `RegCloseKey`: 9691 calls; path calls=0, handle calls=9691, both=0
+- `RegCreateKeyExW`: 19 calls; path calls=0, handle calls=19, both=0
+- `RegDeleteKeyW`: 2 calls; path calls=0, handle calls=2, both=0
+- `RegEnumKeyExW`: 1084 calls; path calls=0, handle calls=1084, both=0
+- `RegEnumKeyW`: 116 calls; path calls=0, handle calls=116, both=0
+- `RegEnumValueA`: 10 calls; path calls=0, handle calls=10, both=0
+- `RegEnumValueW`: 5224 calls; path calls=0, handle calls=5224, both=0
+- `RegOpenKeyExA`: 9 calls; path calls=0, handle calls=9, both=0
+- `RegOpenKeyExW`: 11689 calls; path calls=0, handle calls=11689, both=0
+- `RegQueryInfoKeyW`: 4630 calls; path calls=0, handle calls=4630, both=0
+- `RegQueryValueExA`: 3 calls; path calls=0, handle calls=3, both=0
+- `RegQueryValueExW`: 11907 calls; path calls=0, handle calls=11907, both=0
+- `RegSetValueExW`: 23 calls; path calls=0, handle calls=23, both=0
+- `RemoveDirectoryW`: 4 calls; path calls=4, handle calls=0, both=0
+- `RtlAddVectoredExceptionHandler`: 10 calls; path calls=0, handle calls=10, both=0
+- `RtlSetCurrentTransaction`: 14327 calls; path calls=0, handle calls=14327, both=0
+- `SHGetFileInfoW`: 32 calls; path calls=32, handle calls=0, both=0
+- `SHGetFolderPathW`: 109 calls; path calls=109, handle calls=0, both=0
+- `SendNotifyMessageW`: 4 calls; path calls=0, handle calls=4, both=0
+- `SizeofResource`: 6 calls; path calls=0, handle calls=6, both=0
+- `StartServiceW`: 96 calls; path calls=0, handle calls=96, both=0
+- `WinHttpConnect`: 4 calls; path calls=0, handle calls=4, both=0
+- `WinHttpGetProxyForUrl`: 3 calls; path calls=0, handle calls=3, both=0
+- `WinHttpOpenRequest`: 4 calls; path calls=0, handle calls=4, both=0
+- `WinHttpQueryHeaders`: 16 calls; path calls=0, handle calls=16, both=0
+- `WinHttpReceiveResponse`: 4 calls; path calls=0, handle calls=4, both=0
+- `WinHttpSendRequest`: 4 calls; path calls=0, handle calls=4, both=0
+- `WinHttpSetOption`: 10 calls; path calls=0, handle calls=10, both=0
+- `WriteConsoleW`: 46 calls; path calls=0, handle calls=46, both=0
+
+## Ransomware
+
+- Reports: 10
+- Target file-related calls: 196477
+- Candidate handles with one path: 15475
+- Candidate handles with multiple paths: 4787
+- Candidate handles with no observed path: 15328
+- Distinct raw path strings: 21604
+- Raw paths associated with multiple candidate handles: 14928
+- Target calls without usable path: 100704
+- Target calls without usable handle: 11442
+- Target calls with both usable path and handle: 84331
+
+### API observations
+
+- `ControlService`: 7 calls; path calls=0, handle calls=7, both=0
+- `CopyFileA`: 4 calls; path calls=4, handle calls=0, both=0
+- `CopyFileW`: 1 calls; path calls=1, handle calls=0, both=0
+- `CreateDirectoryW`: 12 calls; path calls=12, handle calls=0, both=0
+- `CreateProcessA`: 4 calls; path calls=0, handle calls=4, both=0
+- `CreateProcessW`: 135 calls; path calls=111, handle calls=135, both=111
+- `CreateServiceW`: 1 calls; path calls=1, handle calls=1, both=1
+- `CreateThread`: 3490 calls; path calls=3490, handle calls=0, both=0
+- `DeleteFileA`: 10 calls; path calls=10, handle calls=0, both=0
+- `DeleteFileW`: 98 calls; path calls=98, handle calls=0, both=0
+- `DeviceIoControl`: 517 calls; path calls=0, handle calls=517, both=0
+- `DllLoadNotification`: 5632 calls; path calls=5632, handle calls=0, both=0
+- `FindFirstFileExW`: 4557 calls; path calls=4557, handle calls=0, both=0
+- `GetDiskFreeSpaceExA`: 2 calls; path calls=2, handle calls=0, both=0
+- `GetDiskFreeSpaceExW`: 2 calls; path calls=2, handle calls=0, both=0
+- `GetDiskFreeSpaceW`: 2 calls; path calls=2, handle calls=0, both=0
+- `GetFileVersionInfoSizeW`: 47 calls; path calls=47, handle calls=0, both=0
+- `GetFileVersionInfoW`: 47 calls; path calls=47, handle calls=0, both=0
+- `HttpOpenRequestW`: 13 calls; path calls=13, handle calls=13, both=13
+- `HttpSendRequestW`: 12 calls; path calls=0, handle calls=12, both=0
+- `InternetCloseHandle`: 23 calls; path calls=0, handle calls=23, both=0
+- `InternetConnectW`: 13 calls; path calls=0, handle calls=13, both=0
+- `InternetSetOptionA`: 3 calls; path calls=0, handle calls=3, both=0
+- `LdrGetDllHandle`: 8118 calls; path calls=8118, handle calls=8118, both=8118
+- `LdrGetProcedureAddress`: 12 calls; path calls=12, handle calls=12, both=12
+- `LdrGetProcedureAddressForCaller`: 29166 calls; path calls=29166, handle calls=29166, both=29166
+- `LdrLoadDll`: 2973 calls; path calls=2973, handle calls=0, both=0
+- `LoadLibraryExW`: 1101 calls; path calls=1101, handle calls=0, both=0
+- `MoveFileWithProgressTransactedW`: 956 calls; path calls=956, handle calls=0, both=0
+- `NtAllocateVirtualMemory`: 26123 calls; path calls=0, handle calls=26123, both=0
+- `NtAllocateVirtualMemoryEx`: 23 calls; path calls=0, handle calls=23, both=0
+- `NtClose`: 100704 calls; path calls=0, handle calls=100704, both=0
+- `NtCreateEvent`: 20 calls; path calls=0, handle calls=20, both=0
+- `NtCreateFile`: 30786 calls; path calls=30786, handle calls=30786, both=30786
+- `NtCreateKey`: 6675 calls; path calls=0, handle calls=6675, both=0
+- `NtCreateMutant`: 4339 calls; path calls=0, handle calls=4339, both=0
+- `NtCreateNamedPipeFile`: 7 calls; path calls=0, handle calls=7, both=0
+- `NtCreateSection`: 8705 calls; path calls=0, handle calls=8705, both=0
+- `NtCreateThreadEx`: 70 calls; path calls=0, handle calls=70, both=0
+- `NtCreateUserProcess`: 291 calls; path calls=291, handle calls=291, both=291
+- `NtDeleteValueKey`: 2689 calls; path calls=0, handle calls=2689, both=0
+- `NtDeviceIoControlFile`: 11086 calls; path calls=0, handle calls=11086, both=0
+- `NtDuplicateObject`: 1710 calls; path calls=0, handle calls=1710, both=0
+- `NtEnumerateKey`: 10099 calls; path calls=0, handle calls=10099, both=0
+- `NtEnumerateValueKey`: 26260 calls; path calls=0, handle calls=26260, both=0
+- `NtFreeVirtualMemory`: 11040 calls; path calls=0, handle calls=11040, both=0
+- `NtGetContextThread`: 1409 calls; path calls=0, handle calls=1409, both=0
+- `NtMapViewOfSection`: 11954 calls; path calls=0, handle calls=11954, both=0
+- `NtOpenDirectoryObject`: 886 calls; path calls=0, handle calls=886, both=0
+- `NtOpenEvent`: 762 calls; path calls=0, handle calls=762, both=0
+- `NtOpenFile`: 33065 calls; path calls=33065, handle calls=33065, both=33065
+- `NtOpenKey`: 6140 calls; path calls=0, handle calls=6140, both=0
+- `NtOpenKeyEx`: 44954 calls; path calls=0, handle calls=44954, both=0
+- `NtOpenMutant`: 369 calls; path calls=0, handle calls=369, both=0
+- `NtOpenProcess`: 2427 calls; path calls=0, handle calls=2427, both=0
+- `NtOpenProcessToken`: 10336 calls; path calls=0, handle calls=10336, both=0
+- `NtOpenSection`: 3713 calls; path calls=0, handle calls=3713, both=0
+- `NtOpenThread`: 14 calls; path calls=0, handle calls=14, both=0
+- `NtProtectVirtualMemory`: 32611 calls; path calls=32337, handle calls=32611, both=32337
+- `NtQueryAttributesFile`: 11442 calls; path calls=11442, handle calls=0, both=0
+- `NtQueryDirectoryFile`: 3401 calls; path calls=3401, handle calls=3401, both=3401
+- `NtQueryFullAttributesFile`: 8243 calls; path calls=8243, handle calls=0, both=0
+- `NtQueryInformationFile`: 25531 calls; path calls=25527, handle calls=25531, both=25527
+- `NtQueryInformationThread`: 7455 calls; path calls=0, handle calls=7455, both=0
+- `NtQueryKey`: 23814 calls; path calls=0, handle calls=23814, both=0
+- `NtQueryMultipleValueKey`: 1378 calls; path calls=0, handle calls=1378, both=0
+- `NtQueryValueKey`: 78694 calls; path calls=0, handle calls=78694, both=0
+- `NtQueueApcThread`: 25 calls; path calls=0, handle calls=25, both=0
+- `NtReadFile`: 7154 calls; path calls=7154, handle calls=7154, both=7154
+- `NtReadVirtualMemory`: 16195 calls; path calls=0, handle calls=16195, both=0
+- `NtReleaseMutant`: 12820 calls; path calls=0, handle calls=12820, both=0
+- `NtResumeThread`: 7841 calls; path calls=0, handle calls=7841, both=0
+- `NtSetContextThread`: 67 calls; path calls=0, handle calls=67, both=0
+- `NtSetInformationFile`: 10406 calls; path calls=10406, handle calls=10406, both=10406
+- `NtSetValueKey`: 4503 calls; path calls=0, handle calls=4503, both=0
+- `NtSuspendThread`: 4329 calls; path calls=0, handle calls=4329, both=0
+- `NtTerminateProcess`: 54 calls; path calls=0, handle calls=54, both=0
+- `NtTerminateThread`: 3450 calls; path calls=0, handle calls=3450, both=0
+- `NtUnmapViewOfSection`: 2288 calls; path calls=0, handle calls=2288, both=0
+- `NtUnmapViewOfSectionEx`: 7382 calls; path calls=0, handle calls=7382, both=0
+- `NtWaitForSingleObject`: 22145 calls; path calls=0, handle calls=22145, both=0
+- `NtWow64WriteVirtualMemory64`: 9 calls; path calls=0, handle calls=9, both=0
+- `NtWriteFile`: 10074 calls; path calls=10074, handle calls=10074, both=10074
+- `NtWriteVirtualMemory`: 2014 calls; path calls=0, handle calls=2014, both=0
+- `PostMessageA`: 3683 calls; path calls=0, handle calls=3683, both=0
+- `PostMessageW`: 644 calls; path calls=0, handle calls=644, both=0
+- `RegCloseKey`: 5780 calls; path calls=0, handle calls=5780, both=0
+- `RegCreateKeyExA`: 73 calls; path calls=0, handle calls=73, both=0
+- `RegCreateKeyExW`: 4272 calls; path calls=0, handle calls=4272, both=0
+- `RegDeleteKeyA`: 4 calls; path calls=0, handle calls=4, both=0
+- `RegDeleteKeyW`: 1473 calls; path calls=0, handle calls=1473, both=0
+- `RegDeleteValueW`: 4660 calls; path calls=0, handle calls=4660, both=0
+- `RegEnumKeyExA`: 88 calls; path calls=0, handle calls=88, both=0
+- `RegEnumKeyExW`: 1422 calls; path calls=0, handle calls=1422, both=0
+- `RegEnumValueW`: 4751 calls; path calls=0, handle calls=4751, both=0
+- `RegOpenKeyExA`: 144 calls; path calls=0, handle calls=144, both=0
+- `RegOpenKeyExW`: 3430 calls; path calls=0, handle calls=3430, both=0
+- `RegQueryInfoKeyA`: 2 calls; path calls=0, handle calls=2, both=0
+- `RegQueryInfoKeyW`: 1538 calls; path calls=0, handle calls=1538, both=0
+- `RegQueryValueExA`: 290 calls; path calls=0, handle calls=290, both=0
+- `RegQueryValueExW`: 12354 calls; path calls=0, handle calls=12354, both=0
+- `RegSetValueExA`: 236 calls; path calls=0, handle calls=236, both=0
+- `RegSetValueExW`: 4666 calls; path calls=0, handle calls=4666, both=0
+- `RtlAddVectoredExceptionHandler`: 20 calls; path calls=0, handle calls=20, both=0
+- `RtlDosPathNameToNtPathName_U`: 1406 calls; path calls=1406, handle calls=0, both=0
+- `RtlSetCurrentTransaction`: 20693 calls; path calls=0, handle calls=20693, both=0
+- `SHGetFileInfoW`: 225 calls; path calls=225, handle calls=0, both=0
+- `SHGetFolderPathW`: 135 calls; path calls=135, handle calls=0, both=0
+- `SendNotifyMessageA`: 2 calls; path calls=0, handle calls=2, both=0
+- `SendNotifyMessageW`: 25 calls; path calls=0, handle calls=25, both=0
+- `ShellExecuteExW`: 159 calls; path calls=159, handle calls=0, both=0
+- `SizeofResource`: 148 calls; path calls=0, handle calls=148, both=0
+- `StartServiceW`: 222 calls; path calls=0, handle calls=222, both=0
+- `VirtualProtectEx`: 2 calls; path calls=2, handle calls=2, both=2
+- `WinHttpConnect`: 3 calls; path calls=0, handle calls=3, both=0
+- `WinHttpGetProxyForUrl`: 2 calls; path calls=0, handle calls=2, both=0
+- `WinHttpOpenRequest`: 3 calls; path calls=0, handle calls=3, both=0
+- `WinHttpQueryHeaders`: 3 calls; path calls=0, handle calls=3, both=0
+- `WinHttpReceiveResponse`: 1 calls; path calls=0, handle calls=1, both=0
+- `WinHttpSendRequest`: 2 calls; path calls=0, handle calls=2, both=0
+- `WinHttpSetOption`: 37 calls; path calls=0, handle calls=37, both=0
+- `WinHttpSetTimeouts`: 2 calls; path calls=0, handle calls=2, both=0
+- `WriteConsoleW`: 2 calls; path calls=0, handle calls=2, both=0
+
+## Representation rules
+
+- Missing means the argument name was absent. Empty means a string with only whitespace. Null means JSON null. Unusable means present but non-string/non-scalar after unwrapping a `value` wrapper.
+- Handles are normalized only for candidate grouping by stripping surrounding whitespace and lowercasing; raw handle values remain in the CSV. Paths are never normalized, lowercased, resolved, or merged.
+- Drive-letter, UNC, NT-device, DOS-device, registry/configuration, relative/rooted-unknown, directory-like, and file-like/unknown labels are descriptive string-pattern categories, not validity judgments.
+
+## Representative observations
+
+- `benign` `NtProtectVirtualMemory.ModuleName` (relative_or_rooted_unknown): `MSCOREE.DLL` (process 2228, call 0)
+- `benign` `LdrLoadDll.FileName` (relative_or_rooted_unknown): `ADVAPI32.dll` (process 2228, call 2)
+- `benign` `NtQueryAttributesFile.FileName` (drive_letter): `C:\Windows\System32\MSCOREE.DLL.local` (process 2228, call 31)
+- `benign` `NtOpenFile.FileName` (drive_letter): `C:\Windows\Microsoft.NET\Framework64\v4.0.30319\` (process 2228, call 39)
+- `benign` `NtProtectVirtualMemory.ModuleName` (relative_or_rooted_unknown): `MSCOREE.DLL` (process 2212, call 0)
+- `benign` `LdrLoadDll.FileName` (relative_or_rooted_unknown): `ADVAPI32.dll` (process 2212, call 1)
+- `benign` `NtQueryAttributesFile.FileName` (drive_letter): `C:\Windows\System32\MSCOREE.DLL.local` (process 2212, call 29)
+- `benign` `NtOpenFile.FileName` (drive_letter): `C:\Windows\Microsoft.NET\Framework64\v4.0.30319\` (process 2212, call 37)
+- `benign` `NtProtectVirtualMemory.ModuleName` (relative_or_rooted_unknown): `MSCOREE.DLL` (process 3472, call 0)
+- `benign` `LdrLoadDll.FileName` (relative_or_rooted_unknown): `ADVAPI32.dll` (process 3472, call 1)
+- `benign` `NtQueryAttributesFile.FileName` (drive_letter): `C:\Windows\System32\MSCOREE.DLL.local` (process 3472, call 28)
+- `benign` `NtOpenFile.FileName` (drive_letter): `C:\Windows\Microsoft.NET\Framework64\v4.0.30319\` (process 3472, call 36)
+- `benign` `NtProtectVirtualMemory.ModuleName` (relative_or_rooted_unknown): `MSCOREE.DLL` (process 1616, call 0)
+- `benign` `LdrLoadDll.FileName` (relative_or_rooted_unknown): `ADVAPI32.dll` (process 1616, call 1)
+- `benign` `NtQueryAttributesFile.FileName` (drive_letter): `C:\Windows\System32\MSCOREE.DLL.local` (process 1616, call 28)
+- `benign` `NtOpenFile.FileName` (drive_letter): `C:\Windows\Microsoft.NET\Framework64\v4.0.30319\` (process 1616, call 36)
+- `benign` `NtProtectVirtualMemory.ModuleName` (relative_or_rooted_unknown): `MSCOREE.DLL` (process 2212, call 0)
+- `benign` `LdrLoadDll.FileName` (relative_or_rooted_unknown): `ADVAPI32.dll` (process 2212, call 1)
+- `benign` `NtQueryAttributesFile.FileName` (drive_letter): `C:\Windows\System32\MSCOREE.DLL.local` (process 2212, call 28)
+- `benign` `NtOpenFile.FileName` (drive_letter): `C:\Windows\Microsoft.NET\Framework64\v4.0.30319\` (process 2212, call 42)
+
+## Conclusion and limitations
+
+The evidence **partially supports candidate association only**: some process-scoped handle values co-occur with raw paths, while other calls lack usable paths or handles and some handles/path strings have multiple associations. Matching values do not prove the same kernel object, and differing strings do not prove different files. No reliable distinct-file identification method is established.
+
+Additional APIs containing path-like or handle-like arguments are included in the API audit separately; their inclusion does not mean they modify files. Timestamps are retained as context only and never used to order or merge events. The selected sample is not the full dataset, and malformed/unexpected records are reported per report.

@@ -1,0 +1,46 @@
+{
+  "dataset_root": "/path/to/EN2025",
+  "classes": {
+    "benign": {
+      "sample_directories": 919,
+      "report_files": 919,
+      "missing_reports": 0,
+      "total_report_storage_bytes": 4025566454,
+      "total_report_storage_mb": 3839.079336,
+      "report_size_bytes": {
+        "minimum": 743114,
+        "median": 2861877,
+        "mean": 4380376.990206746,
+        "p90": 5779402.000000001,
+        "p95": 9231863.400000002,
+        "maximum": 132397903
+      },
+      "reports_exceeding": {
+        "10_mb": 32,
+        "50_mb": 4,
+        "100_mb": 2
+      }
+    },
+    "ransomware": {
+      "sample_directories": 611,
+      "report_files": 611,
+      "missing_reports": 0,
+      "total_report_storage_bytes": 19561836924,
+      "total_report_storage_mb": 18655.621456,
+      "report_size_bytes": {
+        "minimum": 101327,
+        "median": 24609169,
+        "mean": 32016099.711947627,
+        "p90": 80114740.0,
+        "p95": 106828894.5,
+        "maximum": 315944982
+      },
+      "reports_exceeding": {
+        "10_mb": 374,
+        "50_mb": 123,
+        "100_mb": 34
+      }
+    }
+  },
+  "warnings": []
+}

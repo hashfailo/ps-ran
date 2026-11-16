@@ -1,0 +1,4593 @@
+{
+  "classes": {
+    "benign": {
+      "api_stats": {
+        "CopyFileW": {
+          "argument_frequency": {
+            "ExistedBefore": 6,
+            "ExistingFileName": 6,
+            "NewFileName": 6
+          },
+          "both_path_handle_calls": 0,
+          "calls": 6,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 0,
+          "missing_handle_calls": 6,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 6,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "CreateDirectoryW": {
+          "argument_frequency": {
+            "DirectoryName": 11
+          },
+          "both_path_handle_calls": 0,
+          "calls": 11,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 0,
+          "missing_handle_calls": 11,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 11,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "CreateProcessW": {
+          "argument_frequency": {
+            "ApplicationName": 31,
+            "CommandLine": 31,
+            "CreationFlags": 31,
+            "ProcessHandle": 31,
+            "ProcessId": 31,
+            "StackPivoted": 31,
+            "ThreadHandle": 31,
+            "ThreadId": 31
+          },
+          "both_path_handle_calls": 0,
+          "calls": 31,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 31,
+          "handle_calls": 31,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "CreateThread": {
+          "argument_frequency": {
+            "CreationFlags": 209,
+            "ModuleName": 209,
+            "Parameter": 209,
+            "StartRoutine": 209,
+            "ThreadId": 209
+          },
+          "both_path_handle_calls": 0,
+          "calls": 209,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 0,
+          "missing_handle_calls": 209,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 209,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "DeleteFileW": {
+          "argument_frequency": {
+            "FileName": 179
+          },
+          "both_path_handle_calls": 0,
+          "calls": 179,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 0,
+          "missing_handle_calls": 179,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 179,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "DllLoadNotification": {
+          "argument_frequency": {
+            "DllBase": 1527,
+            "DllName": 1527,
+            "NotificationReason": 1527
+          },
+          "both_path_handle_calls": 0,
+          "calls": 1527,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 0,
+          "missing_handle_calls": 1527,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 1527,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "FindFirstFileExW": {
+          "argument_frequency": {
+            "FileName": 3,
+            "FirstCreateTimeHigh": 3,
+            "FirstCreateTimeLow": 3
+          },
+          "both_path_handle_calls": 0,
+          "calls": 3,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 0,
+          "missing_handle_calls": 3,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 3,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "GetDiskFreeSpaceExW": {
+          "argument_frequency": {
+            "DirectoryName": 3
+          },
+          "both_path_handle_calls": 0,
+          "calls": 3,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 0,
+          "missing_handle_calls": 3,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 3,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "GetFileVersionInfoSizeW": {
+          "argument_frequency": {
+            "PathName": 32
+          },
+          "both_path_handle_calls": 0,
+          "calls": 32,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 1,
+          "handle_calls": 0,
+          "missing_handle_calls": 32,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 31,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "GetFileVersionInfoW": {
+          "argument_frequency": {
+            "PathName": 31
+          },
+          "both_path_handle_calls": 0,
+          "calls": 31,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 0,
+          "missing_handle_calls": 31,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 31,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "InternetCloseHandle": {
+          "argument_frequency": {
+            "InternetHandle": 2
+          },
+          "both_path_handle_calls": 0,
+          "calls": 2,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 2,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 2,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "InternetOpenUrlW": {
+          "argument_frequency": {
+            "ConnectionHandle": 2,
+            "Flags": 2,
+            "Headers": 2,
+            "URL": 2
+          },
+          "both_path_handle_calls": 0,
+          "calls": 2,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 2,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 2,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "LdrGetDllHandle": {
+          "argument_frequency": {
+            "FileName": 910,
+            "ModuleHandle": 910
+          },
+          "both_path_handle_calls": 910,
+          "calls": 910,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 910,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 910,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "LdrGetProcedureAddress": {
+          "argument_frequency": {
+            "FunctionAddress": 22,
+            "FunctionName": 22,
+            "ModuleHandle": 22,
+            "ModuleName": 22,
+            "Ordinal": 22
+          },
+          "both_path_handle_calls": 22,
+          "calls": 22,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 22,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 22,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "LdrGetProcedureAddressForCaller": {
+          "argument_frequency": {
+            "FunctionAddress": 6761,
+            "FunctionName": 6761,
+            "ModuleHandle": 6761,
+            "ModuleName": 6761,
+            "Ordinal": 6761
+          },
+          "both_path_handle_calls": 6761,
+          "calls": 6761,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 6761,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 6761,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "LdrLoadDll": {
+          "argument_frequency": {
+            "BaseAddress": 1532,
+            "FileName": 1532,
+            "Flags": 1532
+          },
+          "both_path_handle_calls": 0,
+          "calls": 1532,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 0,
+          "missing_handle_calls": 1532,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 1532,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "LoadLibraryExW": {
+          "argument_frequency": {
+            "dwFlags": 617,
+            "lpLibFileName": 617
+          },
+          "both_path_handle_calls": 0,
+          "calls": 617,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 0,
+          "missing_handle_calls": 617,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 617,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "MoveFileWithProgressTransactedW": {
+          "argument_frequency": {
+            "ExistingFileName": 2,
+            "Flags": 2,
+            "NewFileName": 2
+          },
+          "both_path_handle_calls": 0,
+          "calls": 2,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 0,
+          "missing_handle_calls": 2,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 2,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtAllocateVirtualMemory": {
+          "argument_frequency": {
+            "BaseAddress": 14170,
+            "ProcessHandle": 14170,
+            "Protection": 14170,
+            "RegionSize": 14170,
+            "StackPivoted": 14170
+          },
+          "both_path_handle_calls": 0,
+          "calls": 14170,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 14170,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 14170,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtAllocateVirtualMemoryEx": {
+          "argument_frequency": {
+            "BaseAddress": 42,
+            "ProcessHandle": 42,
+            "Protection": 42,
+            "RegionSize": 42,
+            "StackPivoted": 42
+          },
+          "both_path_handle_calls": 0,
+          "calls": 42,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 42,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 42,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtClose": {
+          "argument_frequency": {
+            "Handle": 34020
+          },
+          "both_path_handle_calls": 0,
+          "calls": 34020,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 34020,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 34020,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtCreateEvent": {
+          "argument_frequency": {
+            "EventName": 10,
+            "EventType": 10,
+            "Handle": 10,
+            "InitialState": 10
+          },
+          "both_path_handle_calls": 0,
+          "calls": 10,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 10,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 10,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtCreateFile": {
+          "argument_frequency": {
+            "CreateDisposition": 7278,
+            "DesiredAccess": 7278,
+            "ExistedBefore": 7278,
+            "FileAttributes": 7278,
+            "FileHandle": 7278,
+            "FileName": 7278,
+            "ShareAccess": 7278,
+            "StackPivoted": 7278
+          },
+          "both_path_handle_calls": 7278,
+          "calls": 7278,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 7278,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 7278,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtCreateKey": {
+          "argument_frequency": {
+            "Class": 13999,
+            "DesiredAccess": 13999,
+            "Disposition": 13999,
+            "KeyHandle": 13999,
+            "ObjectAttributes": 13999,
+            "ObjectAttributesHandle": 13999,
+            "ObjectAttributesName": 13999
+          },
+          "both_path_handle_calls": 0,
+          "calls": 13999,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 13999,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 13999,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtCreateMutant": {
+          "argument_frequency": {
+            "Handle": 152,
+            "InitialOwner": 152,
+            "MutexName": 152
+          },
+          "both_path_handle_calls": 0,
+          "calls": 152,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 152,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 152,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtCreateNamedPipeFile": {
+          "argument_frequency": {
+            "DesiredAccess": 58,
+            "NamedPipeHandle": 58,
+            "PipeName": 58,
+            "ShareAccess": 58
+          },
+          "both_path_handle_calls": 0,
+          "calls": 58,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 58,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 58,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtCreateSection": {
+          "argument_frequency": {
+            "DesiredAccess": 3758,
+            "FileHandle": 3758,
+            "ObjectAttributes": 3758,
+            "SectionHandle": 3758
+          },
+          "both_path_handle_calls": 0,
+          "calls": 3758,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 3758,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 3758,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtCreateThreadEx": {
+          "argument_frequency": {
+            "CreateFlags": 26,
+            "Module": 26,
+            "ProcessHandle": 26,
+            "ProcessId": 26,
+            "StartAddress": 26,
+            "ThreadHandle": 26,
+            "ThreadId": 26
+          },
+          "both_path_handle_calls": 0,
+          "calls": 26,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 26,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 26,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtCreateTransaction": {
+          "argument_frequency": {
+            "CreateOptions": 4,
+            "Description": 4,
+            "DesiredAccess": 4,
+            "IsolationFlags": 4,
+            "IsolationLevel": 4,
+            "ObjectAttributes": 4,
+            "Timeout": 4,
+            "TmHandle": 4,
+            "TransactionHandle": 4,
+            "UnitOfWork": 4
+          },
+          "both_path_handle_calls": 0,
+          "calls": 4,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 4,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 4,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtCreateUserProcess": {
+          "argument_frequency": {
+            "CommandLine": 76,
+            "ImagePathName": 76,
+            "ProcessDesiredAccess": 76,
+            "ProcessFileName": 76,
+            "ProcessHandle": 76,
+            "ProcessId": 76,
+            "ThreadDesiredAccess": 76,
+            "ThreadHandle": 76,
+            "ThreadName": 76
+          },
+          "both_path_handle_calls": 76,
+          "calls": 76,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 76,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 76,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtDeviceIoControlFile": {
+          "argument_frequency": {
+            "FileHandle": 6910,
+            "InputBuffer": 6910,
+            "IoControlCode": 6910,
+            "OutputBuffer": 6910
+          },
+          "both_path_handle_calls": 0,
+          "calls": 6910,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 6910,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 6910,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtDuplicateObject": {
+          "argument_frequency": {
+            "Options": 618,
+            "SourceHandle": 618,
+            "SourceProcessHandle": 618,
+            "TargetHandle": 618,
+            "TargetProcessHandle": 618
+          },
+          "both_path_handle_calls": 0,
+          "calls": 618,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 618,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 618,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtEnumerateKey": {
+          "argument_frequency": {
+            "Index": 11010,
+            "KeyHandle": 11010
+          },
+          "both_path_handle_calls": 0,
+          "calls": 11010,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 11010,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 11010,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtEnumerateValueKey": {
+          "argument_frequency": {
+            "Index": 9991,
+            "KeyHandle": 9991,
+            "KeyValueInformationClass": 9991
+          },
+          "both_path_handle_calls": 0,
+          "calls": 9991,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 9991,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 9991,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtFreeVirtualMemory": {
+          "argument_frequency": {
+            "BaseAddress": 2688,
+            "FreeType": 2688,
+            "ProcessHandle": 2688,
+            "RegionSize": 2688
+          },
+          "both_path_handle_calls": 0,
+          "calls": 2688,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 2688,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 2688,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtGetContextThread": {
+          "argument_frequency": {
+            "CurrentInstructionPointer": 14,
+            "HollowedInstructionPointer": 14,
+            "ProcessId": 14,
+            "ThreadHandle": 14
+          },
+          "both_path_handle_calls": 0,
+          "calls": 14,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 14,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 14,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtMapViewOfSection": {
+          "argument_frequency": {
+            "BaseAddress": 4027,
+            "ProcessHandle": 4027,
+            "SectionHandle": 4027,
+            "SectionOffset": 4027,
+            "StackPivoted": 4027,
+            "ViewSize": 4027,
+            "Win32Protect": 4027
+          },
+          "both_path_handle_calls": 0,
+          "calls": 4027,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 4027,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 4027,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtOpenDirectoryObject": {
+          "argument_frequency": {
+            "DesiredAccess": 88,
+            "DirectoryHandle": 88,
+            "ObjectAttributes": 88
+          },
+          "both_path_handle_calls": 0,
+          "calls": 88,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 88,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 88,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtOpenEvent": {
+          "argument_frequency": {
+            "EventName": 82,
+            "Handle": 82
+          },
+          "both_path_handle_calls": 0,
+          "calls": 82,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 82,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 82,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtOpenFile": {
+          "argument_frequency": {
+            "DesiredAccess": 5457,
+            "FileHandle": 5457,
+            "FileName": 5457,
+            "ShareAccess": 5457
+          },
+          "both_path_handle_calls": 5403,
+          "calls": 5457,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 54,
+          "handle_calls": 5457,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 5403,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtOpenKey": {
+          "argument_frequency": {
+            "DesiredAccess": 5095,
+            "KeyHandle": 5095,
+            "ObjectAttributes": 5095,
+            "ObjectAttributesHandle": 5095,
+            "ObjectAttributesName": 5095
+          },
+          "both_path_handle_calls": 0,
+          "calls": 5095,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 5095,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 5095,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtOpenKeyEx": {
+          "argument_frequency": {
+            "DesiredAccess": 36309,
+            "KeyHandle": 36309,
+            "ObjectAttributes": 36309,
+            "ObjectAttributesHandle": 36309,
+            "ObjectAttributesName": 36309
+          },
+          "both_path_handle_calls": 0,
+          "calls": 36309,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 36309,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 36309,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtOpenMutant": {
+          "argument_frequency": {
+            "Handle": 11,
+            "MutexName": 11
+          },
+          "both_path_handle_calls": 0,
+          "calls": 11,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 11,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 11,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtOpenProcess": {
+          "argument_frequency": {
+            "DesiredAccess": 542,
+            "ProcessHandle": 542,
+            "ProcessIdentifier": 542,
+            "ProcessName": 2
+          },
+          "both_path_handle_calls": 0,
+          "calls": 542,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 542,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 542,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtOpenProcessToken": {
+          "argument_frequency": {
+            "DesiredAccess": 8297,
+            "ProcessHandle": 8297,
+            "TokenHandle": 8297
+          },
+          "both_path_handle_calls": 0,
+          "calls": 8297,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 8297,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 8297,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtOpenSection": {
+          "argument_frequency": {
+            "DesiredAccess": 157,
+            "ObjectAttributes": 157,
+            "SectionHandle": 157
+          },
+          "both_path_handle_calls": 0,
+          "calls": 157,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 157,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 157,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtOpenThread": {
+          "argument_frequency": {
+            "DesiredAccess": 16,
+            "ProcessId": 16,
+            "ThreadHandle": 16,
+            "ThreadId": 16
+          },
+          "both_path_handle_calls": 0,
+          "calls": 16,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 16,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 16,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtProtectVirtualMemory": {
+          "argument_frequency": {
+            "BaseAddress": 3152,
+            "MemoryType": 3152,
+            "ModuleName": 2978,
+            "NewAccessProtection": 3152,
+            "NumberOfBytesProtected": 3152,
+            "OldAccessProtection": 3152,
+            "ProcessHandle": 3152,
+            "StackPivoted": 3152
+          },
+          "both_path_handle_calls": 2978,
+          "calls": 3152,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 3152,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 174,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 2978,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtQueryAttributesFile": {
+          "argument_frequency": {
+            "FileName": 11157
+          },
+          "both_path_handle_calls": 0,
+          "calls": 11157,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 0,
+          "missing_handle_calls": 11157,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 11157,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtQueryFullAttributesFile": {
+          "argument_frequency": {
+            "FileName": 9021
+          },
+          "both_path_handle_calls": 0,
+          "calls": 9021,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 0,
+          "missing_handle_calls": 9021,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 9021,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtQueryInformationFile": {
+          "argument_frequency": {
+            "FileHandle": 12038,
+            "FileInformation": 12038,
+            "FileInformationClass": 12038,
+            "HandleName": 12038
+          },
+          "both_path_handle_calls": 12038,
+          "calls": 12038,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 12038,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 12038,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtQueryInformationThread": {
+          "argument_frequency": {
+            "ThreadHandle": 1095,
+            "ThreadId": 1095,
+            "ThreadInformation": 1095,
+            "ThreadInformationClass": 1095
+          },
+          "both_path_handle_calls": 0,
+          "calls": 1095,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 1095,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 1095,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtQueryKey": {
+          "argument_frequency": {
+            "KeyHandle": 32213,
+            "KeyInformation": 32213,
+            "KeyInformationClass": 32213
+          },
+          "both_path_handle_calls": 0,
+          "calls": 32213,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 32213,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 32213,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtQueryMultipleValueKey": {
+          "argument_frequency": {
+            "FullName": 62,
+            "KeyHandle": 62,
+            "ValueBuffer": 62,
+            "ValueName": 62
+          },
+          "both_path_handle_calls": 0,
+          "calls": 62,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 62,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 62,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtQueryValueKey": {
+          "argument_frequency": {
+            "FullName": 25389,
+            "Information": 13654,
+            "KeyHandle": 25389,
+            "Type": 13654,
+            "ValueName": 25389
+          },
+          "both_path_handle_calls": 0,
+          "calls": 25389,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 25389,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 25389,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtQueueApcThread": {
+          "argument_frequency": {
+            "ApcRoutine": 16,
+            "Module": 16,
+            "ProcessId": 16,
+            "ThreadHandle": 16,
+            "ThreadId": 16
+          },
+          "both_path_handle_calls": 0,
+          "calls": 16,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 16,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 16,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtReadFile": {
+          "argument_frequency": {
+            "Buffer": 8308,
+            "FileHandle": 8308,
+            "HandleName": 8308,
+            "Length": 8308,
+            "Status": 45
+          },
+          "both_path_handle_calls": 8215,
+          "calls": 8308,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 93,
+          "handle_calls": 8308,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 8215,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtReadVirtualMemory": {
+          "argument_frequency": {
+            "BaseAddress": 828,
+            "Buffer": 828,
+            "ProcessHandle": 828,
+            "Size": 828
+          },
+          "both_path_handle_calls": 0,
+          "calls": 828,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 828,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 828,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtReleaseMutant": {
+          "argument_frequency": {
+            "Handle": 4134
+          },
+          "both_path_handle_calls": 0,
+          "calls": 4134,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 4134,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 4134,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtResumeThread": {
+          "argument_frequency": {
+            "ProcessId": 195,
+            "SuspendCount": 195,
+            "ThreadHandle": 195
+          },
+          "both_path_handle_calls": 0,
+          "calls": 195,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 195,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 195,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtSetContextThread": {
+          "argument_frequency": {
+            "CurrentInstructionPointer": 1,
+            "HollowedInstructionPointer": 1,
+            "ThreadHandle": 1
+          },
+          "both_path_handle_calls": 0,
+          "calls": 1,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 1,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 1,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtSetInformationFile": {
+          "argument_frequency": {
+            "FileHandle": 3436,
+            "FileInformation": 3436,
+            "FileInformationClass": 3436,
+            "HandleName": 3436
+          },
+          "both_path_handle_calls": 3436,
+          "calls": 3436,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 3436,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 3436,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtSetValueKey": {
+          "argument_frequency": {
+            "Buffer": 119,
+            "BufferLength": 119,
+            "FullName": 119,
+            "KeyHandle": 119,
+            "Type": 119,
+            "ValueName": 119
+          },
+          "both_path_handle_calls": 0,
+          "calls": 119,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 119,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 119,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtSuspendThread": {
+          "argument_frequency": {
+            "ProcessId": 8,
+            "SuspendCount": 8,
+            "ThreadHandle": 8,
+            "ThreadId": 8
+          },
+          "both_path_handle_calls": 0,
+          "calls": 8,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 8,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 8,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtTerminateProcess": {
+          "argument_frequency": {
+            "ExitCode": 95,
+            "ProcessHandle": 95
+          },
+          "both_path_handle_calls": 0,
+          "calls": 95,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 95,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 95,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtTerminateThread": {
+          "argument_frequency": {
+            "ExitStatus": 150,
+            "ProcessId": 150,
+            "ThreadHandle": 150,
+            "ThreadId": 150
+          },
+          "both_path_handle_calls": 0,
+          "calls": 150,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 150,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 150,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtUnmapViewOfSection": {
+          "argument_frequency": {
+            "BaseAddress": 850,
+            "ProcessHandle": 850,
+            "RegionSize": 850
+          },
+          "both_path_handle_calls": 0,
+          "calls": 850,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 850,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 850,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtUnmapViewOfSectionEx": {
+          "argument_frequency": {
+            "BaseAddress": 3327,
+            "Flags": 3327,
+            "ProcessHandle": 3327,
+            "RegionSize": 3327
+          },
+          "both_path_handle_calls": 0,
+          "calls": 3327,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 3327,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 3327,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtWaitForSingleObject": {
+          "argument_frequency": {
+            "Handle": 8596,
+            "Milliseconds": 8596,
+            "Status": 6715
+          },
+          "both_path_handle_calls": 0,
+          "calls": 8596,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 8596,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 8596,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtWriteFile": {
+          "argument_frequency": {
+            "Buffer": 3241,
+            "FileHandle": 3241,
+            "HandleName": 3241,
+            "Length": 3241,
+            "Status": 6
+          },
+          "both_path_handle_calls": 632,
+          "calls": 3241,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 2609,
+          "handle_calls": 3241,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 632,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtWriteVirtualMemory": {
+          "argument_frequency": {
+            "BaseAddress": 70,
+            "Buffer": 70,
+            "BufferLength": 70,
+            "ProcessHandle": 70,
+            "StackPivoted": 70
+          },
+          "both_path_handle_calls": 0,
+          "calls": 70,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 70,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 70,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "PostMessageW": {
+          "argument_frequency": {
+            "Message": 4735,
+            "WindowHandle": 4735
+          },
+          "both_path_handle_calls": 0,
+          "calls": 4735,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 4735,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 4735,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "RegCloseKey": {
+          "argument_frequency": {
+            "Handle": 9691
+          },
+          "both_path_handle_calls": 0,
+          "calls": 9691,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 9691,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 9691,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "RegCreateKeyExW": {
+          "argument_frequency": {
+            "Access": 19,
+            "Class": 19,
+            "Disposition": 19,
+            "FullName": 19,
+            "Handle": 19,
+            "Registry": 19,
+            "SubKey": 19
+          },
+          "both_path_handle_calls": 0,
+          "calls": 19,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 19,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 19,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "RegDeleteKeyW": {
+          "argument_frequency": {
+            "FullName": 2,
+            "Handle": 2,
+            "SubKey": 2
+          },
+          "both_path_handle_calls": 0,
+          "calls": 2,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 2,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 2,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "RegEnumKeyExW": {
+          "argument_frequency": {
+            "Class": 1084,
+            "FullName": 1084,
+            "Handle": 1084,
+            "Index": 1084,
+            "Name": 1084
+          },
+          "both_path_handle_calls": 0,
+          "calls": 1084,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 1084,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 1084,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "RegEnumKeyW": {
+          "argument_frequency": {
+            "FullName": 116,
+            "Handle": 116,
+            "Index": 116,
+            "Name": 116
+          },
+          "both_path_handle_calls": 0,
+          "calls": 116,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 116,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 116,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "RegEnumValueA": {
+          "argument_frequency": {
+            "Data": 2,
+            "DataLength": 8,
+            "FullName": 10,
+            "Handle": 10,
+            "Index": 10,
+            "Type": 8,
+            "ValueName": 10
+          },
+          "both_path_handle_calls": 0,
+          "calls": 10,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 10,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 10,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "RegEnumValueW": {
+          "argument_frequency": {
+            "Data": 10,
+            "DataLength": 5214,
+            "FullName": 5224,
+            "Handle": 5224,
+            "Index": 5224,
+            "Type": 5214,
+            "ValueName": 5224
+          },
+          "both_path_handle_calls": 0,
+          "calls": 5224,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 5224,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 5224,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "RegOpenKeyExA": {
+          "argument_frequency": {
+            "FullName": 9,
+            "Handle": 9,
+            "Registry": 9,
+            "SubKey": 9
+          },
+          "both_path_handle_calls": 0,
+          "calls": 9,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 9,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 9,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "RegOpenKeyExW": {
+          "argument_frequency": {
+            "FullName": 11689,
+            "Handle": 11689,
+            "Registry": 11689,
+            "SubKey": 11689
+          },
+          "both_path_handle_calls": 0,
+          "calls": 11689,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 11689,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 11689,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "RegQueryInfoKeyW": {
+          "argument_frequency": {
+            "Class": 4630,
+            "KeyHandle": 4630,
+            "MaxClassLength": 4630,
+            "MaxSubKeyLength": 4630,
+            "MaxValueLength": 4630,
+            "MaxValueNameLength": 4630,
+            "SubKeyCount": 4630,
+            "ValueCount": 4630
+          },
+          "both_path_handle_calls": 0,
+          "calls": 4630,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 4630,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 4630,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "RegQueryValueExA": {
+          "argument_frequency": {
+            "FullName": 3,
+            "Handle": 3,
+            "ValueName": 3
+          },
+          "both_path_handle_calls": 0,
+          "calls": 3,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 3,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 3,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "RegQueryValueExW": {
+          "argument_frequency": {
+            "Data": 4725,
+            "FullName": 11907,
+            "Handle": 11907,
+            "ValueName": 11907
+          },
+          "both_path_handle_calls": 0,
+          "calls": 11907,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 11907,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 11907,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "RegSetValueExW": {
+          "argument_frequency": {
+            "Buffer": 23,
+            "BufferLength": 23,
+            "FullName": 23,
+            "Handle": 23,
+            "Type": 23,
+            "ValueName": 23
+          },
+          "both_path_handle_calls": 0,
+          "calls": 23,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 23,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 23,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "RemoveDirectoryW": {
+          "argument_frequency": {
+            "DirectoryName": 4
+          },
+          "both_path_handle_calls": 0,
+          "calls": 4,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 0,
+          "missing_handle_calls": 4,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 4,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "RtlAddVectoredExceptionHandler": {
+          "argument_frequency": {
+            "First": 10,
+            "Handler": 10
+          },
+          "both_path_handle_calls": 0,
+          "calls": 10,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 10,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 10,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "RtlSetCurrentTransaction": {
+          "argument_frequency": {
+            "TransactionHandle": 14327
+          },
+          "both_path_handle_calls": 0,
+          "calls": 14327,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 14327,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 14327,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "SHGetFileInfoW": {
+          "argument_frequency": {
+            "DisplayName": 32,
+            "Flags": 32,
+            "Path": 32,
+            "TypeName": 32
+          },
+          "both_path_handle_calls": 0,
+          "calls": 32,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 0,
+          "missing_handle_calls": 32,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 32,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "SHGetFolderPathW": {
+          "argument_frequency": {
+            "Folder": 109,
+            "Path": 109
+          },
+          "both_path_handle_calls": 0,
+          "calls": 109,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 0,
+          "missing_handle_calls": 109,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 109,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "SendNotifyMessageW": {
+          "argument_frequency": {
+            "Message": 4,
+            "WindowHandle": 4
+          },
+          "both_path_handle_calls": 0,
+          "calls": 4,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 4,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 4,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "SizeofResource": {
+          "argument_frequency": {
+            "ModuleHandle": 6,
+            "ResourceInfo": 6
+          },
+          "both_path_handle_calls": 0,
+          "calls": 6,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 6,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 6,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "StartServiceW": {
+          "argument_frequency": {
+            "Arguments": 96,
+            "ServiceHandle": 96,
+            "ServiceName": 96
+          },
+          "both_path_handle_calls": 0,
+          "calls": 96,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 96,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 96,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "WinHttpConnect": {
+          "argument_frequency": {
+            "ServerName": 4,
+            "ServerPort": 4,
+            "SessionHandle": 4
+          },
+          "both_path_handle_calls": 0,
+          "calls": 4,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 4,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 4,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "WinHttpGetProxyForUrl": {
+          "argument_frequency": {
+            "SessionHandle": 3,
+            "Url": 3
+          },
+          "both_path_handle_calls": 0,
+          "calls": 3,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 3,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 3,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "WinHttpOpenRequest": {
+          "argument_frequency": {
+            "Flags": 4,
+            "InternetHandle": 4,
+            "ObjectName": 4,
+            "Referrer": 4,
+            "Verb": 4,
+            "Version": 4
+          },
+          "both_path_handle_calls": 0,
+          "calls": 4,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 4,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 4,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "WinHttpQueryHeaders": {
+          "argument_frequency": {
+            "InternetHandle": 16
+          },
+          "both_path_handle_calls": 0,
+          "calls": 16,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 16,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 16,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "WinHttpReceiveResponse": {
+          "argument_frequency": {
+            "InternetHandle": 4
+          },
+          "both_path_handle_calls": 0,
+          "calls": 4,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 4,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 4,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "WinHttpSendRequest": {
+          "argument_frequency": {
+            "Headers": 4,
+            "InternetHandle": 4,
+            "Optional": 4
+          },
+          "both_path_handle_calls": 0,
+          "calls": 4,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 4,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 4,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "WinHttpSetOption": {
+          "argument_frequency": {
+            "Buffer": 10,
+            "InternetHandle": 10,
+            "Option": 10
+          },
+          "both_path_handle_calls": 0,
+          "calls": 10,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 10,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 10,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "WriteConsoleW": {
+          "argument_frequency": {
+            "Buffer": 46,
+            "ConsoleHandle": 46
+          },
+          "both_path_handle_calls": 0,
+          "calls": 46,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 46,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 46,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        }
+      },
+      "candidate_handles_with_multiple_paths": 1059,
+      "candidate_handles_with_no_observed_path": 4112,
+      "candidate_handles_with_one_path": 2192,
+      "distinct_raw_path_strings": 1378,
+      "file_related_calls_with_both_usable": 16749,
+      "file_related_calls_without_usable_handle": 11157,
+      "file_related_calls_without_usable_path": 36683,
+      "file_related_target_calls": 64589,
+      "raw_paths_associated_with_multiple_candidate_handles": 1174,
+      "reports_processed": 10
+    },
+    "ransomware": {
+      "api_stats": {
+        "ControlService": {
+          "argument_frequency": {
+            "ControlCode": 7,
+            "ServiceHandle": 7,
+            "ServiceName": 7
+          },
+          "both_path_handle_calls": 0,
+          "calls": 7,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 7,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 7,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "CopyFileA": {
+          "argument_frequency": {
+            "ExistedBefore": 4,
+            "ExistingFileName": 4,
+            "NewFileName": 4
+          },
+          "both_path_handle_calls": 0,
+          "calls": 4,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 0,
+          "missing_handle_calls": 4,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 4,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "CopyFileW": {
+          "argument_frequency": {
+            "ExistedBefore": 1,
+            "ExistingFileName": 1,
+            "NewFileName": 1
+          },
+          "both_path_handle_calls": 0,
+          "calls": 1,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 0,
+          "missing_handle_calls": 1,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 1,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "CreateDirectoryW": {
+          "argument_frequency": {
+            "DirectoryName": 12
+          },
+          "both_path_handle_calls": 0,
+          "calls": 12,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 0,
+          "missing_handle_calls": 12,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 12,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "CreateProcessA": {
+          "argument_frequency": {
+            "ApplicationName": 4,
+            "CommandLine": 4,
+            "CreationFlags": 4,
+            "ProcessHandle": 4,
+            "ProcessId": 4,
+            "StackPivoted": 4,
+            "ThreadHandle": 4,
+            "ThreadId": 4
+          },
+          "both_path_handle_calls": 0,
+          "calls": 4,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 4,
+          "handle_calls": 4,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "CreateProcessW": {
+          "argument_frequency": {
+            "ApplicationName": 135,
+            "CommandLine": 135,
+            "CreationFlags": 135,
+            "ParentHandle": 107,
+            "ProcessHandle": 135,
+            "ProcessId": 135,
+            "StackPivoted": 135,
+            "ThreadHandle": 135,
+            "ThreadId": 135
+          },
+          "both_path_handle_calls": 111,
+          "calls": 135,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 24,
+          "handle_calls": 135,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 111,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "CreateServiceW": {
+          "argument_frequency": {
+            "BinaryPathName": 1,
+            "DesiredAccess": 1,
+            "DisplayName": 1,
+            "ErrorControl": 1,
+            "Password": 1,
+            "ServiceControlHandle": 1,
+            "ServiceName": 1,
+            "ServiceStartName": 1,
+            "ServiceType": 1,
+            "StartType": 1
+          },
+          "both_path_handle_calls": 1,
+          "calls": 1,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 1,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 1,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "CreateThread": {
+          "argument_frequency": {
+            "CreationFlags": 3490,
+            "ModuleName": 3490,
+            "Parameter": 3490,
+            "StartRoutine": 3490,
+            "ThreadId": 3490
+          },
+          "both_path_handle_calls": 0,
+          "calls": 3490,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 0,
+          "missing_handle_calls": 3490,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 3490,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "DeleteFileA": {
+          "argument_frequency": {
+            "FileName": 10
+          },
+          "both_path_handle_calls": 0,
+          "calls": 10,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 0,
+          "missing_handle_calls": 10,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 10,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "DeleteFileW": {
+          "argument_frequency": {
+            "FileName": 98
+          },
+          "both_path_handle_calls": 0,
+          "calls": 98,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 0,
+          "missing_handle_calls": 98,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 98,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "DeviceIoControl": {
+          "argument_frequency": {
+            "DeviceHandle": 517,
+            "InBuffer": 517,
+            "IoControlCode": 517,
+            "OutBuffer": 517
+          },
+          "both_path_handle_calls": 0,
+          "calls": 517,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 517,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 517,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "DllLoadNotification": {
+          "argument_frequency": {
+            "DllBase": 5632,
+            "DllName": 5632,
+            "NotificationReason": 5632
+          },
+          "both_path_handle_calls": 0,
+          "calls": 5632,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 0,
+          "missing_handle_calls": 5632,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 5632,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "FindFirstFileExW": {
+          "argument_frequency": {
+            "FileName": 4557,
+            "FirstCreateTimeHigh": 4498,
+            "FirstCreateTimeLow": 4498
+          },
+          "both_path_handle_calls": 0,
+          "calls": 4557,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 0,
+          "missing_handle_calls": 4557,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 4557,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "GetDiskFreeSpaceExA": {
+          "argument_frequency": {
+            "DirectoryName": 2
+          },
+          "both_path_handle_calls": 0,
+          "calls": 2,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 0,
+          "missing_handle_calls": 2,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 2,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "GetDiskFreeSpaceExW": {
+          "argument_frequency": {
+            "DirectoryName": 2
+          },
+          "both_path_handle_calls": 0,
+          "calls": 2,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 0,
+          "missing_handle_calls": 2,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 2,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "GetDiskFreeSpaceW": {
+          "argument_frequency": {
+            "RootPathName": 2
+          },
+          "both_path_handle_calls": 0,
+          "calls": 2,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 0,
+          "missing_handle_calls": 2,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 2,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "GetFileVersionInfoSizeW": {
+          "argument_frequency": {
+            "PathName": 47
+          },
+          "both_path_handle_calls": 0,
+          "calls": 47,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 0,
+          "missing_handle_calls": 47,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 47,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "GetFileVersionInfoW": {
+          "argument_frequency": {
+            "PathName": 47
+          },
+          "both_path_handle_calls": 0,
+          "calls": 47,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 0,
+          "missing_handle_calls": 47,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 47,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "HttpOpenRequestW": {
+          "argument_frequency": {
+            "Flags": 13,
+            "InternetHandle": 13,
+            "Path": 13,
+            "Referrer": 13,
+            "Verb": 13
+          },
+          "both_path_handle_calls": 13,
+          "calls": 13,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 13,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 13,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "HttpSendRequestW": {
+          "argument_frequency": {
+            "Headers": 12,
+            "PostData": 12,
+            "RequestHandle": 12
+          },
+          "both_path_handle_calls": 0,
+          "calls": 12,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 12,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 12,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "InternetCloseHandle": {
+          "argument_frequency": {
+            "InternetHandle": 23
+          },
+          "both_path_handle_calls": 0,
+          "calls": 23,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 23,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 23,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "InternetConnectW": {
+          "argument_frequency": {
+            "Flags": 13,
+            "InternetHandle": 13,
+            "Password": 13,
+            "ServerName": 13,
+            "ServerPort": 13,
+            "Service": 13,
+            "Username": 13
+          },
+          "both_path_handle_calls": 0,
+          "calls": 13,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 13,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 13,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "InternetSetOptionA": {
+          "argument_frequency": {
+            "Buffer": 3,
+            "InternetHandle": 3,
+            "Option": 3
+          },
+          "both_path_handle_calls": 0,
+          "calls": 3,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 3,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 3,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "LdrGetDllHandle": {
+          "argument_frequency": {
+            "FileName": 8118,
+            "ModuleHandle": 8118
+          },
+          "both_path_handle_calls": 8118,
+          "calls": 8118,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 8118,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 8118,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "LdrGetProcedureAddress": {
+          "argument_frequency": {
+            "FunctionAddress": 12,
+            "FunctionName": 12,
+            "ModuleHandle": 12,
+            "ModuleName": 12,
+            "Ordinal": 12
+          },
+          "both_path_handle_calls": 12,
+          "calls": 12,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 12,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 12,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "LdrGetProcedureAddressForCaller": {
+          "argument_frequency": {
+            "FunctionAddress": 29166,
+            "FunctionName": 29166,
+            "ModuleHandle": 29166,
+            "ModuleName": 29166,
+            "Ordinal": 29166
+          },
+          "both_path_handle_calls": 29166,
+          "calls": 29166,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 29166,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 29166,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "LdrLoadDll": {
+          "argument_frequency": {
+            "BaseAddress": 2973,
+            "FileName": 2973,
+            "Flags": 2973
+          },
+          "both_path_handle_calls": 0,
+          "calls": 2973,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 0,
+          "missing_handle_calls": 2973,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 2973,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "LoadLibraryExW": {
+          "argument_frequency": {
+            "dwFlags": 1101,
+            "lpLibFileName": 1101
+          },
+          "both_path_handle_calls": 0,
+          "calls": 1101,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 0,
+          "missing_handle_calls": 1101,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 1101,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "MoveFileWithProgressTransactedW": {
+          "argument_frequency": {
+            "ExistingFileName": 956,
+            "Flags": 956,
+            "NewFileName": 956
+          },
+          "both_path_handle_calls": 0,
+          "calls": 956,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 0,
+          "missing_handle_calls": 956,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 956,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtAllocateVirtualMemory": {
+          "argument_frequency": {
+            "BaseAddress": 26123,
+            "ProcessHandle": 26123,
+            "Protection": 26123,
+            "RegionSize": 26123,
+            "StackPivoted": 26123
+          },
+          "both_path_handle_calls": 0,
+          "calls": 26123,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 26123,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 26123,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtAllocateVirtualMemoryEx": {
+          "argument_frequency": {
+            "BaseAddress": 23,
+            "ProcessHandle": 23,
+            "Protection": 23,
+            "RegionSize": 23,
+            "StackPivoted": 23
+          },
+          "both_path_handle_calls": 0,
+          "calls": 23,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 23,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 23,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtClose": {
+          "argument_frequency": {
+            "Handle": 100704
+          },
+          "both_path_handle_calls": 0,
+          "calls": 100704,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 100704,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 100704,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtCreateEvent": {
+          "argument_frequency": {
+            "EventName": 20,
+            "EventType": 20,
+            "Handle": 20,
+            "InitialState": 20
+          },
+          "both_path_handle_calls": 0,
+          "calls": 20,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 20,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 20,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtCreateFile": {
+          "argument_frequency": {
+            "CreateDisposition": 30786,
+            "DesiredAccess": 30786,
+            "ExistedBefore": 30786,
+            "FileAttributes": 30786,
+            "FileHandle": 30786,
+            "FileName": 30786,
+            "ShareAccess": 30786,
+            "StackPivoted": 30786
+          },
+          "both_path_handle_calls": 30786,
+          "calls": 30786,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 30786,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 30786,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtCreateKey": {
+          "argument_frequency": {
+            "Class": 6675,
+            "DesiredAccess": 6675,
+            "Disposition": 6675,
+            "KeyHandle": 6675,
+            "ObjectAttributes": 6675,
+            "ObjectAttributesHandle": 6675,
+            "ObjectAttributesName": 6675
+          },
+          "both_path_handle_calls": 0,
+          "calls": 6675,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 6675,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 6675,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtCreateMutant": {
+          "argument_frequency": {
+            "Handle": 4339,
+            "InitialOwner": 4339,
+            "MutexName": 4339
+          },
+          "both_path_handle_calls": 0,
+          "calls": 4339,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 4339,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 4339,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtCreateNamedPipeFile": {
+          "argument_frequency": {
+            "DesiredAccess": 7,
+            "NamedPipeHandle": 7,
+            "PipeName": 7,
+            "ShareAccess": 7
+          },
+          "both_path_handle_calls": 0,
+          "calls": 7,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 7,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 7,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtCreateSection": {
+          "argument_frequency": {
+            "DesiredAccess": 8705,
+            "FileHandle": 8705,
+            "ObjectAttributes": 8705,
+            "SectionHandle": 8705
+          },
+          "both_path_handle_calls": 0,
+          "calls": 8705,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 8705,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 8705,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtCreateThreadEx": {
+          "argument_frequency": {
+            "CreateFlags": 70,
+            "Module": 70,
+            "ProcessHandle": 70,
+            "ProcessId": 70,
+            "StartAddress": 70,
+            "ThreadHandle": 70,
+            "ThreadId": 70
+          },
+          "both_path_handle_calls": 0,
+          "calls": 70,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 70,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 70,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtCreateUserProcess": {
+          "argument_frequency": {
+            "CommandLine": 291,
+            "ImagePathName": 291,
+            "ProcessDesiredAccess": 291,
+            "ProcessFileName": 291,
+            "ProcessHandle": 291,
+            "ProcessId": 291,
+            "ThreadDesiredAccess": 291,
+            "ThreadHandle": 291,
+            "ThreadName": 291
+          },
+          "both_path_handle_calls": 291,
+          "calls": 291,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 291,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 291,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtDeleteValueKey": {
+          "argument_frequency": {
+            "FullName": 2689,
+            "KeyHandle": 2689,
+            "ValueName": 2689
+          },
+          "both_path_handle_calls": 0,
+          "calls": 2689,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 2689,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 2689,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtDeviceIoControlFile": {
+          "argument_frequency": {
+            "FileHandle": 11086,
+            "InputBuffer": 11086,
+            "IoControlCode": 11086,
+            "OutputBuffer": 11086
+          },
+          "both_path_handle_calls": 0,
+          "calls": 11086,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 11086,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 11086,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtDuplicateObject": {
+          "argument_frequency": {
+            "Options": 1710,
+            "SourceHandle": 1710,
+            "SourceProcessHandle": 1710,
+            "TargetHandle": 1710,
+            "TargetProcessHandle": 1710
+          },
+          "both_path_handle_calls": 0,
+          "calls": 1710,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 1710,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 1710,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtEnumerateKey": {
+          "argument_frequency": {
+            "Index": 10099,
+            "KeyHandle": 10099
+          },
+          "both_path_handle_calls": 0,
+          "calls": 10099,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 10099,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 10099,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtEnumerateValueKey": {
+          "argument_frequency": {
+            "Index": 26260,
+            "KeyHandle": 26260,
+            "KeyValueInformationClass": 26260
+          },
+          "both_path_handle_calls": 0,
+          "calls": 26260,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 26260,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 26260,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtFreeVirtualMemory": {
+          "argument_frequency": {
+            "BaseAddress": 11040,
+            "FreeType": 11040,
+            "ProcessHandle": 11040,
+            "RegionSize": 11040
+          },
+          "both_path_handle_calls": 0,
+          "calls": 11040,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 11040,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 11040,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtGetContextThread": {
+          "argument_frequency": {
+            "CurrentInstructionPointer": 1409,
+            "HollowedInstructionPointer": 1409,
+            "ProcessId": 1409,
+            "ThreadHandle": 1409
+          },
+          "both_path_handle_calls": 0,
+          "calls": 1409,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 1409,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 1409,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtMapViewOfSection": {
+          "argument_frequency": {
+            "BaseAddress": 11954,
+            "ProcessHandle": 11954,
+            "SectionHandle": 11954,
+            "SectionOffset": 11954,
+            "StackPivoted": 11954,
+            "ViewSize": 11954,
+            "Win32Protect": 11954
+          },
+          "both_path_handle_calls": 0,
+          "calls": 11954,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 11954,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 11954,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtOpenDirectoryObject": {
+          "argument_frequency": {
+            "DesiredAccess": 886,
+            "DirectoryHandle": 886,
+            "ObjectAttributes": 886
+          },
+          "both_path_handle_calls": 0,
+          "calls": 886,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 886,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 886,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtOpenEvent": {
+          "argument_frequency": {
+            "EventName": 762,
+            "Handle": 762
+          },
+          "both_path_handle_calls": 0,
+          "calls": 762,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 762,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 762,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtOpenFile": {
+          "argument_frequency": {
+            "DesiredAccess": 33065,
+            "FileHandle": 33065,
+            "FileName": 33065,
+            "ShareAccess": 33065
+          },
+          "both_path_handle_calls": 33065,
+          "calls": 33065,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 33065,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 33065,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtOpenKey": {
+          "argument_frequency": {
+            "DesiredAccess": 6140,
+            "KeyHandle": 6140,
+            "ObjectAttributes": 6140,
+            "ObjectAttributesHandle": 6140,
+            "ObjectAttributesName": 6140
+          },
+          "both_path_handle_calls": 0,
+          "calls": 6140,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 6140,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 6140,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtOpenKeyEx": {
+          "argument_frequency": {
+            "DesiredAccess": 44954,
+            "KeyHandle": 44954,
+            "ObjectAttributes": 44954,
+            "ObjectAttributesHandle": 44954,
+            "ObjectAttributesName": 44954
+          },
+          "both_path_handle_calls": 0,
+          "calls": 44954,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 44954,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 44954,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtOpenMutant": {
+          "argument_frequency": {
+            "Handle": 369,
+            "MutexName": 369
+          },
+          "both_path_handle_calls": 0,
+          "calls": 369,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 369,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 369,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtOpenProcess": {
+          "argument_frequency": {
+            "DesiredAccess": 2427,
+            "ProcessHandle": 2427,
+            "ProcessIdentifier": 2427,
+            "ProcessName": 602
+          },
+          "both_path_handle_calls": 0,
+          "calls": 2427,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 2427,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 2427,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtOpenProcessToken": {
+          "argument_frequency": {
+            "DesiredAccess": 10336,
+            "ProcessHandle": 10336,
+            "TokenHandle": 10336
+          },
+          "both_path_handle_calls": 0,
+          "calls": 10336,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 10336,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 10336,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtOpenSection": {
+          "argument_frequency": {
+            "DesiredAccess": 3713,
+            "ObjectAttributes": 3713,
+            "SectionHandle": 3713
+          },
+          "both_path_handle_calls": 0,
+          "calls": 3713,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 3713,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 3713,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtOpenThread": {
+          "argument_frequency": {
+            "DesiredAccess": 14,
+            "ProcessId": 14,
+            "ThreadHandle": 14,
+            "ThreadId": 14
+          },
+          "both_path_handle_calls": 0,
+          "calls": 14,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 14,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 14,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtProtectVirtualMemory": {
+          "argument_frequency": {
+            "BaseAddress": 32611,
+            "MemoryType": 32611,
+            "ModuleName": 32337,
+            "NewAccessProtection": 32611,
+            "NumberOfBytesProtected": 32611,
+            "OldAccessProtection": 32611,
+            "ProcessHandle": 32611,
+            "StackPivoted": 32611
+          },
+          "both_path_handle_calls": 32337,
+          "calls": 32611,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 32611,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 274,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 32337,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtQueryAttributesFile": {
+          "argument_frequency": {
+            "FileName": 11442
+          },
+          "both_path_handle_calls": 0,
+          "calls": 11442,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 0,
+          "missing_handle_calls": 11442,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 11442,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtQueryDirectoryFile": {
+          "argument_frequency": {
+            "FileHandle": 3401,
+            "FileInformation": 3401,
+            "FileInformationClass": 3401,
+            "FileName": 3401
+          },
+          "both_path_handle_calls": 3401,
+          "calls": 3401,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 3401,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 3401,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtQueryFullAttributesFile": {
+          "argument_frequency": {
+            "FileName": 8243
+          },
+          "both_path_handle_calls": 0,
+          "calls": 8243,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 0,
+          "missing_handle_calls": 8243,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 8243,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtQueryInformationFile": {
+          "argument_frequency": {
+            "FileHandle": 25531,
+            "FileInformation": 25531,
+            "FileInformationClass": 25531,
+            "HandleName": 25531
+          },
+          "both_path_handle_calls": 25527,
+          "calls": 25531,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 4,
+          "handle_calls": 25531,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 25527,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtQueryInformationThread": {
+          "argument_frequency": {
+            "ThreadHandle": 7455,
+            "ThreadId": 7455,
+            "ThreadInformation": 7455,
+            "ThreadInformationClass": 7455
+          },
+          "both_path_handle_calls": 0,
+          "calls": 7455,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 7455,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 7455,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtQueryKey": {
+          "argument_frequency": {
+            "KeyHandle": 23814,
+            "KeyInformation": 23814,
+            "KeyInformationClass": 23814
+          },
+          "both_path_handle_calls": 0,
+          "calls": 23814,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 23814,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 23814,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtQueryMultipleValueKey": {
+          "argument_frequency": {
+            "FullName": 1378,
+            "KeyHandle": 1378,
+            "ValueBuffer": 1378,
+            "ValueName": 1378
+          },
+          "both_path_handle_calls": 0,
+          "calls": 1378,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 1378,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 1378,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtQueryValueKey": {
+          "argument_frequency": {
+            "FullName": 78694,
+            "Information": 25445,
+            "KeyHandle": 78694,
+            "Type": 25445,
+            "ValueName": 78694
+          },
+          "both_path_handle_calls": 0,
+          "calls": 78694,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 78694,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 78694,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtQueueApcThread": {
+          "argument_frequency": {
+            "ApcRoutine": 25,
+            "Module": 25,
+            "ProcessId": 25,
+            "ThreadHandle": 25,
+            "ThreadId": 25
+          },
+          "both_path_handle_calls": 0,
+          "calls": 25,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 25,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 25,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtReadFile": {
+          "argument_frequency": {
+            "Buffer": 7154,
+            "FileHandle": 7154,
+            "HandleName": 7154,
+            "Length": 7154,
+            "Status": 9
+          },
+          "both_path_handle_calls": 7154,
+          "calls": 7154,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 7154,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 7154,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtReadVirtualMemory": {
+          "argument_frequency": {
+            "BaseAddress": 16195,
+            "Buffer": 16195,
+            "ProcessHandle": 16195,
+            "Size": 16195
+          },
+          "both_path_handle_calls": 0,
+          "calls": 16195,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 16195,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 16195,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtReleaseMutant": {
+          "argument_frequency": {
+            "Handle": 12820
+          },
+          "both_path_handle_calls": 0,
+          "calls": 12820,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 12820,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 12820,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtResumeThread": {
+          "argument_frequency": {
+            "ProcessId": 7841,
+            "SuspendCount": 7841,
+            "ThreadHandle": 7841
+          },
+          "both_path_handle_calls": 0,
+          "calls": 7841,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 7841,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 7841,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtSetContextThread": {
+          "argument_frequency": {
+            "CurrentInstructionPointer": 67,
+            "HollowedInstructionPointer": 67,
+            "ThreadHandle": 67
+          },
+          "both_path_handle_calls": 0,
+          "calls": 67,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 67,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 67,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtSetInformationFile": {
+          "argument_frequency": {
+            "FileHandle": 10406,
+            "FileInformation": 10406,
+            "FileInformationClass": 10406,
+            "HandleName": 10406
+          },
+          "both_path_handle_calls": 10406,
+          "calls": 10406,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 10406,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 10406,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtSetValueKey": {
+          "argument_frequency": {
+            "Buffer": 4503,
+            "BufferLength": 4503,
+            "FullName": 4503,
+            "KeyHandle": 4503,
+            "Type": 4503,
+            "ValueName": 4503
+          },
+          "both_path_handle_calls": 0,
+          "calls": 4503,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 4503,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 4503,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtSuspendThread": {
+          "argument_frequency": {
+            "ProcessId": 4329,
+            "SuspendCount": 4329,
+            "ThreadHandle": 4329,
+            "ThreadId": 4329
+          },
+          "both_path_handle_calls": 0,
+          "calls": 4329,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 4329,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 4329,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtTerminateProcess": {
+          "argument_frequency": {
+            "ExitCode": 54,
+            "ProcessHandle": 54
+          },
+          "both_path_handle_calls": 0,
+          "calls": 54,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 54,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 54,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtTerminateThread": {
+          "argument_frequency": {
+            "ExitStatus": 3450,
+            "ProcessId": 3450,
+            "ThreadHandle": 3450,
+            "ThreadId": 3450
+          },
+          "both_path_handle_calls": 0,
+          "calls": 3450,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 3450,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 3450,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtUnmapViewOfSection": {
+          "argument_frequency": {
+            "BaseAddress": 2288,
+            "ProcessHandle": 2288,
+            "RegionSize": 2288
+          },
+          "both_path_handle_calls": 0,
+          "calls": 2288,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 2288,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 2288,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtUnmapViewOfSectionEx": {
+          "argument_frequency": {
+            "BaseAddress": 7382,
+            "Flags": 7382,
+            "ProcessHandle": 7382,
+            "RegionSize": 7382
+          },
+          "both_path_handle_calls": 0,
+          "calls": 7382,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 7382,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 7382,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtWaitForSingleObject": {
+          "argument_frequency": {
+            "Handle": 22145,
+            "Milliseconds": 22145,
+            "Status": 6430
+          },
+          "both_path_handle_calls": 0,
+          "calls": 22145,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 22145,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 22145,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtWow64WriteVirtualMemory64": {
+          "argument_frequency": {
+            "BaseAddress": 9,
+            "Buffer": 9,
+            "BufferLength": 9,
+            "ProcessHandle": 9,
+            "StackPivoted": 9
+          },
+          "both_path_handle_calls": 0,
+          "calls": 9,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 9,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 9,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtWriteFile": {
+          "argument_frequency": {
+            "Buffer": 10074,
+            "FileHandle": 10074,
+            "HandleName": 10074,
+            "Length": 10074,
+            "Status": 48
+          },
+          "both_path_handle_calls": 10074,
+          "calls": 10074,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 10074,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 10074,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "NtWriteVirtualMemory": {
+          "argument_frequency": {
+            "BaseAddress": 2014,
+            "Buffer": 2014,
+            "BufferLength": 2014,
+            "ProcessHandle": 2014,
+            "StackPivoted": 2014
+          },
+          "both_path_handle_calls": 0,
+          "calls": 2014,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 2014,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 2014,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "PostMessageA": {
+          "argument_frequency": {
+            "Message": 3683,
+            "WindowHandle": 3683
+          },
+          "both_path_handle_calls": 0,
+          "calls": 3683,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 3683,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 3683,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "PostMessageW": {
+          "argument_frequency": {
+            "Message": 644,
+            "WindowHandle": 644
+          },
+          "both_path_handle_calls": 0,
+          "calls": 644,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 644,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 644,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "RegCloseKey": {
+          "argument_frequency": {
+            "Handle": 5780
+          },
+          "both_path_handle_calls": 0,
+          "calls": 5780,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 5780,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 5780,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "RegCreateKeyExA": {
+          "argument_frequency": {
+            "Access": 73,
+            "Class": 73,
+            "Disposition": 73,
+            "FullName": 73,
+            "Handle": 73,
+            "Registry": 73,
+            "SubKey": 73
+          },
+          "both_path_handle_calls": 0,
+          "calls": 73,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 73,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 73,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "RegCreateKeyExW": {
+          "argument_frequency": {
+            "Access": 4272,
+            "Class": 4272,
+            "Disposition": 4272,
+            "FullName": 4272,
+            "Handle": 4272,
+            "Registry": 4272,
+            "SubKey": 4272
+          },
+          "both_path_handle_calls": 0,
+          "calls": 4272,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 4272,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 4272,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "RegDeleteKeyA": {
+          "argument_frequency": {
+            "FullName": 4,
+            "Handle": 4,
+            "SubKey": 4
+          },
+          "both_path_handle_calls": 0,
+          "calls": 4,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 4,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 4,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "RegDeleteKeyW": {
+          "argument_frequency": {
+            "FullName": 1473,
+            "Handle": 1473,
+            "SubKey": 1473
+          },
+          "both_path_handle_calls": 0,
+          "calls": 1473,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 1473,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 1473,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "RegDeleteValueW": {
+          "argument_frequency": {
+            "FullName": 4660,
+            "Handle": 4660,
+            "ValueName": 4660
+          },
+          "both_path_handle_calls": 0,
+          "calls": 4660,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 4660,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 4660,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "RegEnumKeyExA": {
+          "argument_frequency": {
+            "Class": 88,
+            "FullName": 88,
+            "Handle": 88,
+            "Index": 88,
+            "Name": 88
+          },
+          "both_path_handle_calls": 0,
+          "calls": 88,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 88,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 88,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "RegEnumKeyExW": {
+          "argument_frequency": {
+            "Class": 1422,
+            "FullName": 1422,
+            "Handle": 1422,
+            "Index": 1422,
+            "Name": 1422
+          },
+          "both_path_handle_calls": 0,
+          "calls": 1422,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 1422,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 1422,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "RegEnumValueW": {
+          "argument_frequency": {
+            "Data": 21,
+            "DataLength": 4730,
+            "FullName": 4751,
+            "Handle": 4751,
+            "Index": 4751,
+            "Type": 4730,
+            "ValueName": 4751
+          },
+          "both_path_handle_calls": 0,
+          "calls": 4751,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 4751,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 4751,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "RegOpenKeyExA": {
+          "argument_frequency": {
+            "FullName": 144,
+            "Handle": 144,
+            "Registry": 144,
+            "SubKey": 144
+          },
+          "both_path_handle_calls": 0,
+          "calls": 144,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 144,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 144,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "RegOpenKeyExW": {
+          "argument_frequency": {
+            "FullName": 3430,
+            "Handle": 3430,
+            "Registry": 3430,
+            "SubKey": 3430
+          },
+          "both_path_handle_calls": 0,
+          "calls": 3430,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 3430,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 3430,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "RegQueryInfoKeyA": {
+          "argument_frequency": {
+            "Class": 2,
+            "KeyHandle": 2,
+            "MaxClassLength": 2,
+            "MaxSubKeyLength": 2,
+            "MaxValueLength": 2,
+            "MaxValueNameLength": 2,
+            "SubKeyCount": 2,
+            "ValueCount": 2
+          },
+          "both_path_handle_calls": 0,
+          "calls": 2,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 2,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 2,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "RegQueryInfoKeyW": {
+          "argument_frequency": {
+            "Class": 1538,
+            "KeyHandle": 1538,
+            "MaxClassLength": 1538,
+            "MaxSubKeyLength": 1538,
+            "MaxValueLength": 1538,
+            "MaxValueNameLength": 1538,
+            "SubKeyCount": 1538,
+            "ValueCount": 1538
+          },
+          "both_path_handle_calls": 0,
+          "calls": 1538,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 1538,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 1538,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "RegQueryValueExA": {
+          "argument_frequency": {
+            "Data": 26,
+            "FullName": 290,
+            "Handle": 290,
+            "ValueName": 290
+          },
+          "both_path_handle_calls": 0,
+          "calls": 290,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 290,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 290,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "RegQueryValueExW": {
+          "argument_frequency": {
+            "Data": 5589,
+            "DataLength": 3312,
+            "FullName": 12354,
+            "Handle": 12354,
+            "Type": 3312,
+            "ValueName": 12354
+          },
+          "both_path_handle_calls": 0,
+          "calls": 12354,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 12354,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 12354,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "RegSetValueExA": {
+          "argument_frequency": {
+            "Buffer": 236,
+            "BufferLength": 236,
+            "FullName": 236,
+            "Handle": 236,
+            "Type": 236,
+            "ValueName": 236
+          },
+          "both_path_handle_calls": 0,
+          "calls": 236,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 236,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 236,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "RegSetValueExW": {
+          "argument_frequency": {
+            "Buffer": 4666,
+            "BufferLength": 4666,
+            "FullName": 4666,
+            "Handle": 4666,
+            "Type": 4666,
+            "ValueName": 4666
+          },
+          "both_path_handle_calls": 0,
+          "calls": 4666,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 4666,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 4666,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "RtlAddVectoredExceptionHandler": {
+          "argument_frequency": {
+            "First": 20,
+            "Handler": 20
+          },
+          "both_path_handle_calls": 0,
+          "calls": 20,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 20,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 20,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "RtlDosPathNameToNtPathName_U": {
+          "argument_frequency": {
+            "DosFileName": 1406
+          },
+          "both_path_handle_calls": 0,
+          "calls": 1406,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 0,
+          "missing_handle_calls": 1406,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 1406,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "RtlSetCurrentTransaction": {
+          "argument_frequency": {
+            "TransactionHandle": 20693
+          },
+          "both_path_handle_calls": 0,
+          "calls": 20693,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 20693,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 20693,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "SHGetFileInfoW": {
+          "argument_frequency": {
+            "DisplayName": 225,
+            "Flags": 225,
+            "Path": 225,
+            "TypeName": 225
+          },
+          "both_path_handle_calls": 0,
+          "calls": 225,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 0,
+          "missing_handle_calls": 225,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 225,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "SHGetFolderPathW": {
+          "argument_frequency": {
+            "Folder": 135,
+            "Path": 135
+          },
+          "both_path_handle_calls": 0,
+          "calls": 135,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 0,
+          "missing_handle_calls": 135,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 135,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "SendNotifyMessageA": {
+          "argument_frequency": {
+            "Message": 2,
+            "WindowHandle": 2
+          },
+          "both_path_handle_calls": 0,
+          "calls": 2,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 2,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 2,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "SendNotifyMessageW": {
+          "argument_frequency": {
+            "Message": 25,
+            "WindowHandle": 25
+          },
+          "both_path_handle_calls": 0,
+          "calls": 25,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 25,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 25,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "ShellExecuteExW": {
+          "argument_frequency": {
+            "FilePath": 159,
+            "Parameters": 159,
+            "Show": 159
+          },
+          "both_path_handle_calls": 0,
+          "calls": 159,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 0,
+          "missing_handle_calls": 159,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 159,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "SizeofResource": {
+          "argument_frequency": {
+            "ModuleHandle": 148,
+            "ResourceInfo": 148
+          },
+          "both_path_handle_calls": 0,
+          "calls": 148,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 148,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 148,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "StartServiceW": {
+          "argument_frequency": {
+            "Arguments": 222,
+            "ServiceHandle": 222,
+            "ServiceName": 222
+          },
+          "both_path_handle_calls": 0,
+          "calls": 222,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 222,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 222,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "VirtualProtectEx": {
+          "argument_frequency": {
+            "Address": 2,
+            "MemType": 2,
+            "ModuleName": 2,
+            "OldProtection": 2,
+            "ProcessHandle": 2,
+            "Protection": 2,
+            "Size": 2,
+            "StackPivoted": 2
+          },
+          "both_path_handle_calls": 2,
+          "calls": 2,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 2,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 0,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 2,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "WinHttpConnect": {
+          "argument_frequency": {
+            "ServerName": 3,
+            "ServerPort": 3,
+            "SessionHandle": 3
+          },
+          "both_path_handle_calls": 0,
+          "calls": 3,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 3,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 3,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "WinHttpGetProxyForUrl": {
+          "argument_frequency": {
+            "SessionHandle": 2,
+            "Url": 2
+          },
+          "both_path_handle_calls": 0,
+          "calls": 2,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 2,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 2,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "WinHttpOpenRequest": {
+          "argument_frequency": {
+            "Flags": 3,
+            "InternetHandle": 3,
+            "ObjectName": 3,
+            "Referrer": 3,
+            "Verb": 3,
+            "Version": 3
+          },
+          "both_path_handle_calls": 0,
+          "calls": 3,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 3,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 3,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "WinHttpQueryHeaders": {
+          "argument_frequency": {
+            "InternetHandle": 3
+          },
+          "both_path_handle_calls": 0,
+          "calls": 3,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 3,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 3,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "WinHttpReceiveResponse": {
+          "argument_frequency": {
+            "InternetHandle": 1
+          },
+          "both_path_handle_calls": 0,
+          "calls": 1,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 1,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 1,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "WinHttpSendRequest": {
+          "argument_frequency": {
+            "Headers": 2,
+            "InternetHandle": 2,
+            "Optional": 2
+          },
+          "both_path_handle_calls": 0,
+          "calls": 2,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 2,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 2,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "WinHttpSetOption": {
+          "argument_frequency": {
+            "Buffer": 37,
+            "InternetHandle": 37,
+            "Option": 37
+          },
+          "both_path_handle_calls": 0,
+          "calls": 37,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 37,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 37,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "WinHttpSetTimeouts": {
+          "argument_frequency": {
+            "ConnectTimeout": 2,
+            "InternetHandle": 2,
+            "ReceiveTimeout": 2,
+            "ResolveTimeout": 2,
+            "SendTimeout": 2
+          },
+          "both_path_handle_calls": 0,
+          "calls": 2,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 2,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 2,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        },
+        "WriteConsoleW": {
+          "argument_frequency": {
+            "Buffer": 2,
+            "ConsoleHandle": 2
+          },
+          "both_path_handle_calls": 0,
+          "calls": 2,
+          "empty_handle_calls": 0,
+          "empty_path_calls": 0,
+          "handle_calls": 2,
+          "missing_handle_calls": 0,
+          "missing_path_calls": 2,
+          "null_handle_calls": 0,
+          "null_path_calls": 0,
+          "path_calls": 0,
+          "unusable_handle_calls": 0,
+          "unusable_path_calls": 0
+        }
+      },
+      "candidate_handles_with_multiple_paths": 4787,
+      "candidate_handles_with_no_observed_path": 15328,
+      "candidate_handles_with_one_path": 15475,
+      "distinct_raw_path_strings": 21604,
+      "file_related_calls_with_both_usable": 84331,
+      "file_related_calls_without_usable_handle": 11442,
+      "file_related_calls_without_usable_path": 100704,
+      "file_related_target_calls": 196477,
+      "raw_paths_associated_with_multiple_candidate_handles": 14928,
+      "reports_processed": 10
+    }
+  },
+  "dataset_root": "/path/to/EN2025",
+  "limitations": [
+    "Candidate handle/path associations do not prove file identity or kernel object identity.",
+    "Path representation labels are descriptive pattern matches, not validity checks.",
+    "The audit processes the fixed 20-report Phase 0C sample, not the full dataset.",
+    "Additional path/handle APIs are reported observationally and are not classified as modifying APIs."
+  ],
+  "methodology": {
+    "additional_api_rule": "include any call with a path-like or handle-like argument name",
+    "handle_grouping": "strip and lowercase only for candidate keys",
+    "missing_rules": {
+      "empty": "string containing only whitespace",
+      "missing": "argument name absent",
+      "null": "JSON null",
+      "unusable": "present but non-string/non-scalar after unwrapping value"
+    },
+    "ordering": "stored process-call position only; timestamps never used to order",
+    "path_normalization": "none",
+    "target_apis": [
+      "NtCreateFile",
+      "NtOpenFile",
+      "NtWriteFile",
+      "NtSetInformationFile",
+      "NtClose",
+      "NtQueryAttributesFile"
+    ]
+  },
+  "report_errors": {},
+  "reports_processed": 20,
+  "selection_manifest": [
+    {
+      "class": "benign",
+      "relative_report_path": "benign/6d14916cc273aba32bffcc115c2ec71614e61a6b95d5c3f8cde7c64a9e4481ac/report.json",
+      "size_bytes": 743114
+    },
+    {
+      "class": "benign",
+      "relative_report_path": "benign/8130d90665602a085f2c1284729c891330caae568cffe08be454af20d1b0bcef/report.json",
+      "size_bytes": 743884
+    },
+    {
+      "class": "benign",
+      "relative_report_path": "benign/cc0d4c85639dd5e8d68c4b356c9dcf9c501bae0190a08376bced2bcc85e2cf79/report.json",
+      "size_bytes": 747240
+    },
+    {
+      "class": "benign",
+      "relative_report_path": "benign/5cd37ffb582d6b9366f05a3268afc86f65efea3b2ad6c6856458416919d32d33/report.json",
+      "size_bytes": 757318
+    },
+    {
+      "class": "benign",
+      "relative_report_path": "benign/896baff0131eff425f4897b19f64734302baa32386244b95cffc0ec14f122075/report.json",
+      "size_bytes": 763885
+    },
+    {
+      "class": "benign",
+      "relative_report_path": "benign/ac8eccff20d0b4df5df77c63b8cb403ceea0d54ff172459cc7046135dde6cc95/report.json",
+      "size_bytes": 52134517
+    },
+    {
+      "class": "benign",
+      "relative_report_path": "benign/6cbcd7e7544c5878c07382499440c4878b5da4c8b2c64bc9d81f1a2686330b0f/report.json",
+      "size_bytes": 58132429
+    },
+    {
+      "class": "benign",
+      "relative_report_path": "benign/85bc7bfb6ca93ce864a112849afbb090b2b4a47e1fd66caa332fecfdaf145073/report.json",
+      "size_bytes": 70446550
+    },
+    {
+      "class": "benign",
+      "relative_report_path": "benign/04785b45f5e89cf98a45f917948826b63d2f9bc155d291544626f5b8b9c01318/report.json",
+      "size_bytes": 128998372
+    },
+    {
+      "class": "benign",
+      "relative_report_path": "benign/3bc839b933d9c40a8b8d25b415c1037ba4a47009bf3c4e3a3d4c26554b7d4898/report.json",
+      "size_bytes": 132397903
+    },
+    {
+      "class": "ransomware",
+      "relative_report_path": "ransomware/992dad791a523f2c0a0b5a74c08e5573905f301d8891db0ed6e885face9ef0e2/report.json",
+      "size_bytes": 101327
+    },
+    {
+      "class": "ransomware",
+      "relative_report_path": "ransomware/9704a4959ec0edb5b82732944be3665e80ed974dec17ab401545ee21069da08d/report.json",
+      "size_bytes": 101355
+    },
+    {
+      "class": "ransomware",
+      "relative_report_path": "ransomware/7124f6f197e503f77b3bbb136391b12d79a0e248e697506184aaf19b2df8eb7e/report.json",
+      "size_bytes": 127121
+    },
+    {
+      "class": "ransomware",
+      "relative_report_path": "ransomware/8575dcf7c67612b4d1fc1315bb19318f06bb5abdc6341890e251eb303e386db7/report.json",
+      "size_bytes": 127182
+    },
+    {
+      "class": "ransomware",
+      "relative_report_path": "ransomware/4ae6519e0d6a7aaf9b684497763257e3a752ef0b31b4ba31afb9aecd1af59d9a/report.json",
+      "size_bytes": 127418
+    },
+    {
+      "class": "ransomware",
+      "relative_report_path": "ransomware/a245bb21af350757ae0eebbd3e8a13332f48a02393cf508e2668835cc98e6dc6/report.json",
+      "size_bytes": 161875321
+    },
+    {
+      "class": "ransomware",
+      "relative_report_path": "ransomware/b2493a580153291b69ca23190d00a00b1220cd0aadf469b3974fdaa726516649/report.json",
+      "size_bytes": 187176510
+    },
+    {
+      "class": "ransomware",
+      "relative_report_path": "ransomware/a1d99da15a8902431ab728f50cc47294cdb18fa204d4343f42e49fc84d44bed6/report.json",
+      "size_bytes": 188248346
+    },
+    {
+      "class": "ransomware",
+      "relative_report_path": "ransomware/7d9380fb533f6af97982464579db90dcffe42067d07d570a9857f4b0e5d37862/report.json",
+      "size_bytes": 199455153
+    },
+    {
+      "class": "ransomware",
+      "relative_report_path": "ransomware/54412886df7c047a42393e1e0f509da55a27c6b953a9a80b2f18b8ae78628deb/report.json",
+      "size_bytes": 315944982
+    }
+  ]
+}

@@ -1,0 +1,230 @@
+{
+  "benign/001b7fa6b0ef402d2ab4f10403d6e9867c9d9c6493b99392f2cdb63bc2631422/report.json": {
+    "class": "benign",
+    "sample_directory": "001b7fa6b0ef402d2ab4f10403d6e9867c9d9c6493b99392f2cdb63bc2631422",
+    "ordering": {
+      "calls_observed": 2617,
+      "calls_with_ids": 2617,
+      "unique_call_ids": true,
+      "duplicate_call_id_count": 0,
+      "numeric_ids": 2617,
+      "numeric_id_adjacent_comparisons": {
+        "increasing": 2616,
+        "decreasing": 0,
+        "equal": 0
+      },
+      "cross_process_id_adjacent_comparisons": {
+        "comparisons": 0,
+        "increasing": 0,
+        "decreasing": 0,
+        "equal": 0
+      },
+      "timestamps_present": 2617,
+      "timestamps_parsed": 2617,
+      "timestamp_parse_failures": 0,
+      "timestamps_monotonic_within_processes": true,
+      "within_process_timestamp_violations": 0,
+      "timestamps_monotonic_combined": true,
+      "combined_timestamp_violations": 0,
+      "multiple_calls_share_timestamp": true,
+      "shared_timestamp_groups": 40,
+      "id_timestamp_adjacent_observations": {
+        "comparisons": 2616,
+        "agreeing_direction": 41,
+        "disagreeing_direction": 0,
+        "id_equal_or_unordered": 0,
+        "timestamp_equal_or_unordered": 2575
+      }
+    }
+  },
+  "benign/00a71718fc9af677e8dba149386da3940688bb6ccf917ddea341294566077c83/report.json": {
+    "class": "benign",
+    "sample_directory": "00a71718fc9af677e8dba149386da3940688bb6ccf917ddea341294566077c83",
+    "ordering": {
+      "calls_observed": 5159,
+      "calls_with_ids": 5159,
+      "unique_call_ids": false,
+      "duplicate_call_id_count": 1040,
+      "numeric_ids": 5159,
+      "numeric_id_adjacent_comparisons": {
+        "increasing": 5157,
+        "decreasing": 1,
+        "equal": 0
+      },
+      "cross_process_id_adjacent_comparisons": {
+        "comparisons": 1,
+        "increasing": 0,
+        "decreasing": 1,
+        "equal": 0
+      },
+      "timestamps_present": 5159,
+      "timestamps_parsed": 5159,
+      "timestamp_parse_failures": 0,
+      "timestamps_monotonic_within_processes": true,
+      "within_process_timestamp_violations": 0,
+      "timestamps_monotonic_combined": false,
+      "combined_timestamp_violations": 1,
+      "multiple_calls_share_timestamp": true,
+      "shared_timestamp_groups": 45,
+      "id_timestamp_adjacent_observations": {
+        "comparisons": 5158,
+        "agreeing_direction": 47,
+        "disagreeing_direction": 0,
+        "id_equal_or_unordered": 0,
+        "timestamp_equal_or_unordered": 5111
+      }
+    }
+  },
+  "benign/00fb683d8b6cb06b7dbd83431281b28fc203f0553cf5351bf6b1287634a50671/report.json": {
+    "class": "benign",
+    "sample_directory": "00fb683d8b6cb06b7dbd83431281b28fc203f0553cf5351bf6b1287634a50671",
+    "ordering": {
+      "calls_observed": 24267,
+      "calls_with_ids": 24267,
+      "unique_call_ids": false,
+      "duplicate_call_id_count": 295,
+      "numeric_ids": 24267,
+      "numeric_id_adjacent_comparisons": {
+        "increasing": 24264,
+        "decreasing": 2,
+        "equal": 0
+      },
+      "cross_process_id_adjacent_comparisons": {
+        "comparisons": 2,
+        "increasing": 0,
+        "decreasing": 2,
+        "equal": 0
+      },
+      "timestamps_present": 24267,
+      "timestamps_parsed": 24267,
+      "timestamp_parse_failures": 0,
+      "timestamps_monotonic_within_processes": true,
+      "within_process_timestamp_violations": 0,
+      "timestamps_monotonic_combined": false,
+      "combined_timestamp_violations": 2,
+      "multiple_calls_share_timestamp": true,
+      "shared_timestamp_groups": 485,
+      "id_timestamp_adjacent_observations": {
+        "comparisons": 24266,
+        "agreeing_direction": 619,
+        "disagreeing_direction": 0,
+        "id_equal_or_unordered": 0,
+        "timestamp_equal_or_unordered": 23647
+      }
+    }
+  },
+  "ransomware/0085f13770b5b1ef96b1f5b57474c44f4a21ae8befef06a17cd254f75a071ec2/report.json": {
+    "class": "ransomware",
+    "sample_directory": "0085f13770b5b1ef96b1f5b57474c44f4a21ae8befef06a17cd254f75a071ec2",
+    "ordering": {
+      "calls_observed": 21339,
+      "calls_with_ids": 21339,
+      "unique_call_ids": false,
+      "duplicate_call_id_count": 357,
+      "numeric_ids": 21339,
+      "numeric_id_adjacent_comparisons": {
+        "increasing": 21336,
+        "decreasing": 2,
+        "equal": 0
+      },
+      "cross_process_id_adjacent_comparisons": {
+        "comparisons": 2,
+        "increasing": 0,
+        "decreasing": 2,
+        "equal": 0
+      },
+      "timestamps_present": 21339,
+      "timestamps_parsed": 21339,
+      "timestamp_parse_failures": 0,
+      "timestamps_monotonic_within_processes": true,
+      "within_process_timestamp_violations": 0,
+      "timestamps_monotonic_combined": false,
+      "combined_timestamp_violations": 2,
+      "multiple_calls_share_timestamp": true,
+      "shared_timestamp_groups": 821,
+      "id_timestamp_adjacent_observations": {
+        "comparisons": 21338,
+        "agreeing_direction": 841,
+        "disagreeing_direction": 0,
+        "id_equal_or_unordered": 0,
+        "timestamp_equal_or_unordered": 20497
+      }
+    }
+  },
+  "ransomware/0162641163a30a2edff787eeecc733ab1de46f03e213743dc768d39eb3075985/report.json": {
+    "class": "ransomware",
+    "sample_directory": "0162641163a30a2edff787eeecc733ab1de46f03e213743dc768d39eb3075985",
+    "ordering": {
+      "calls_observed": 4047,
+      "calls_with_ids": 4047,
+      "unique_call_ids": true,
+      "duplicate_call_id_count": 0,
+      "numeric_ids": 4047,
+      "numeric_id_adjacent_comparisons": {
+        "increasing": 4046,
+        "decreasing": 0,
+        "equal": 0
+      },
+      "cross_process_id_adjacent_comparisons": {
+        "comparisons": 0,
+        "increasing": 0,
+        "decreasing": 0,
+        "equal": 0
+      },
+      "timestamps_present": 4047,
+      "timestamps_parsed": 4047,
+      "timestamp_parse_failures": 0,
+      "timestamps_monotonic_within_processes": true,
+      "within_process_timestamp_violations": 0,
+      "timestamps_monotonic_combined": true,
+      "combined_timestamp_violations": 0,
+      "multiple_calls_share_timestamp": true,
+      "shared_timestamp_groups": 30,
+      "id_timestamp_adjacent_observations": {
+        "comparisons": 4046,
+        "agreeing_direction": 31,
+        "disagreeing_direction": 0,
+        "id_equal_or_unordered": 0,
+        "timestamp_equal_or_unordered": 4015
+      }
+    }
+  },
+  "ransomware/0178461a8373f6147042d0c7ca7febb020dc4f600e639d6a53d343c02899bc9a/report.json": {
+    "class": "ransomware",
+    "sample_directory": "0178461a8373f6147042d0c7ca7febb020dc4f600e639d6a53d343c02899bc9a",
+    "ordering": {
+      "calls_observed": 41469,
+      "calls_with_ids": 41469,
+      "unique_call_ids": false,
+      "duplicate_call_id_count": 7239,
+      "numeric_ids": 41469,
+      "numeric_id_adjacent_comparisons": {
+        "increasing": 41465,
+        "decreasing": 3,
+        "equal": 0
+      },
+      "cross_process_id_adjacent_comparisons": {
+        "comparisons": 3,
+        "increasing": 0,
+        "decreasing": 3,
+        "equal": 0
+      },
+      "timestamps_present": 41469,
+      "timestamps_parsed": 41469,
+      "timestamp_parse_failures": 0,
+      "timestamps_monotonic_within_processes": true,
+      "within_process_timestamp_violations": 0,
+      "timestamps_monotonic_combined": false,
+      "combined_timestamp_violations": 2,
+      "multiple_calls_share_timestamp": true,
+      "shared_timestamp_groups": 1678,
+      "id_timestamp_adjacent_observations": {
+        "comparisons": 41468,
+        "agreeing_direction": 2089,
+        "disagreeing_direction": 1,
+        "id_equal_or_unordered": 0,
+        "timestamp_equal_or_unordered": 39378
+      }
+    }
+  }
+}
