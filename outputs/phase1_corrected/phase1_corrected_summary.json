@@ -1,0 +1,33 @@
+{
+  "ambiguity_count": 346827,
+  "dataset_root": "/path/to/EN2025",
+  "event_count": 1474631,
+  "file_handle_mapping": {
+    "explicit_only": true,
+    "uncertain_apis": [
+      "NtDuplicateObject",
+      "NtDeviceIoControlFile",
+      "NtQueryObject"
+    ]
+  },
+  "file_handle_observations": 223031,
+  "non_file_handle_observations": 1117763,
+  "ordering": {
+    "merged_serialized": false,
+    "primary": "stored process traversal and process-call order",
+    "reason": "timestamps cannot establish ground-truth chronology and no merged stream is emitted"
+  },
+  "samples_failed": 0,
+  "samples_processed": 20,
+  "samples_selected": 20,
+  "storage": {
+    "canonical": "JSONL",
+    "npy": "not used; variable-length event streams",
+    "parquet": {
+      "available": false,
+      "message": "Parquet unavailable; no silent format substitution.",
+      "writer": null
+    }
+  },
+  "unresolved_identity_records": 346827
+}
