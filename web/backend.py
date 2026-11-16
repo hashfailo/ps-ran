@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import csv
+import gc
+import json
 import os
 import uuid
 from pathlib import Path
@@ -52,6 +54,8 @@ def available_model(model_id: str) -> Any:
     if model_id not in {"xran_style_cnn", "gru", "causal_transformer"}:
         raise ValueError(f"unknown model: {model_id}")
     if model_id not in _loaded_models:
+        _loaded_models.clear()
+        gc.collect()
         directory = NEURAL_MODEL_ROOT / model_id
         if not (directory / "model.pt").is_file() or not (directory / "metadata.json").is_file():
             raise ValueError(f"model artifact is not available: {model_id}")
@@ -118,10 +122,10 @@ def models() -> dict[str, Any]:
     for item in result[1:]:
         if item["status"] == "ready":
             try:
-                loaded = available_model(item["id"])
-                item["threshold"] = loaded.threshold
-                item["metadata"] = loaded.metadata
-            except (RuntimeError, ValueError) as exc:
+                metadata_path = NEURAL_MODEL_ROOT / item["id"] / "metadata.json"
+                item["metadata"] = json.loads(metadata_path.read_text(encoding="utf-8"))
+                item["threshold"] = item["metadata"]["threshold"]
+            except (OSError, KeyError, ValueError) as exc:
                 item["status"] = "unavailable"
                 item["error"] = str(exc)
     return {"models": result}

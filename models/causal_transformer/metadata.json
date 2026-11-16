@@ -1,0 +1,114 @@
+{
+  "artifact_version": "neural-detector-v1",
+  "architecture": "causal_transformer",
+  "config": {
+    "architecture": "causal_transformer",
+    "vocabulary_size": 331,
+    "sequence_length": 512,
+    "embedding_dim": 32,
+    "hidden_dim": 64,
+    "layers": 1,
+    "heads": 4,
+    "dropout": 0.1,
+    "batch_size": 4,
+    "learning_rate": 0.001,
+    "epochs": 8,
+    "seed": 1337
+  },
+  "threshold": 0.9850924700498581,
+  "calibration": "99th percentile of validation benign final scores",
+  "split_rule": "sha256(sample_id) integer mod 100: train < 70, validation < 85, test >= 85",
+  "dataset_format": "sequence-memmap-v1",
+  "hardware": {
+    "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.3 (main, Feb  3 2026, 15:32:20) [Clang 17.0.0 (clang-1700.6.3.2)]",
+    "machine": "arm64",
+    "processor": "arm",
+    "torch_version": "2.15.0",
+    "cuda_available": false,
+    "mps_available": true
+  },
+  "selected_device": "mps",
+  "python": "3.14.3 (main, Feb  3 2026, 15:32:20) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "numpy": "2.5.5",
+  "dependencies": {
+    "torch": "2.15.0",
+    "numpy": "2.5.5",
+    "ijson": "3.6.0"
+  },
+  "git_revision": "d9feb041905bf231fd01e796f3f03867144018d3",
+  "training_summary": {
+    "architecture": "causal_transformer",
+    "threshold": 0.9850924700498581,
+    "samples": 1530,
+    "splits": {
+      "test": 236,
+      "train": 1059,
+      "validation": 235
+    },
+    "validation_benign_count": 156,
+    "test_true_positive": 64,
+    "test_false_positive": 6,
+    "test_recall": 0.7032967032967034,
+    "test_false_alarm_rate": 0.041379310344827586
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.5273112375218914,
+      "validation_loss": 0.4140993969641247,
+      "duration_seconds": 7.628375165979378,
+      "max_rss": 478789632
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.35730002765754626,
+      "validation_loss": 0.44884596977351326,
+      "duration_seconds": 7.211021916009486,
+      "max_rss": 478789632
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.35998190839550864,
+      "validation_loss": 0.4424848639252359,
+      "duration_seconds": 7.1201151659479365,
+      "max_rss": 478789632
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.3301929744219689,
+      "validation_loss": 0.4285571909927905,
+      "duration_seconds": 7.234722082968801,
+      "max_rss": 478789632
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.31218025647400316,
+      "validation_loss": 0.4625053582081603,
+      "duration_seconds": 7.194935124949552,
+      "max_rss": 478789632
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.3129947435049305,
+      "validation_loss": 0.4692624615134387,
+      "duration_seconds": 7.193718084017746,
+      "max_rss": 478789632
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.3049917006278674,
+      "validation_loss": 0.43989287647102976,
+      "duration_seconds": 7.278751417063177,
+      "max_rss": 478789632
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.2637163360330786,
+      "validation_loss": 0.3938331098167463,
+      "duration_seconds": 7.166418041917495,
+      "max_rss": 478789632
+    }
+  ],
+  "best_epoch": 8
+}

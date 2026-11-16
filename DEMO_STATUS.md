@@ -11,9 +11,9 @@
 | Recorded replay engine | Implemented | `src/detection/replay.py` |
 | FastAPI/WebSocket backend | Implemented | `web/backend.py` |
 | React/Tailwind dashboard | Implemented and production-built | `web/frontend/`, `web/frontend/dist/` |
-| XRan-style CNN | Training/inference implementation available; no trained artifact in this checkout | Train with `scripts/train_xran_style_cnn.py` |
-| GRU | Training/inference implementation available; no trained artifact in this checkout | Train with `scripts/train_gru.py` |
-| Causal Transformer | Training/inference implementation available; no trained artifact in this checkout | Train with `scripts/train_causal_transformer.py` |
+| XRan-style CNN | Trained locally on Apple MPS | `models/xran_style_cnn/` |
+| GRU | Trained locally on Apple MPS | `models/gru/` |
+| Causal Transformer | Trained locally on Apple MPS | `models/causal_transformer/` |
 
 ## Model contract
 
@@ -44,14 +44,15 @@ Completed checks:
   completion and first-alert activity capture;
 - browser-level React dashboard replay with live socket, event stream, score,
   first-alert marker, and completed result.
+- full local MPS training and independent fixed-test evaluation for all three
+  neural architectures;
+- local FastAPI model selection and first-event inference for all four models.
 
 ## Known limitations
 
-- The additional neural architectures are not trained in the current demo
-  environment because PyTorch is not installed. Their code, preprocessing,
-  checkpointing, calibration, Colab notebook, and FastAPI artifact loader are
-  present; `/api/models` marks them unavailable until a complete artifact
-  directory is copied under `models/`.
+- The neural artifacts were trained on the local Apple M1 MPS backend using
+  the fixed 1,059/235/236 sample split. Their persisted inference artifacts do
+  not require access to raw EN2025 reports.
 - Replay counts the report once before streaming so the UI can show progress.
 - WebSocket sessions are process-local and intended for one local demonstrator.
 - Event scores are model outputs, not calibrated causal probabilities of

@@ -21,7 +21,18 @@ type Sample = {
   relative_report_path: string;
 };
 
-type Model = { id: string; name: string; status: string; threshold?: number; vocabulary_size?: number };
+type Model = {
+  id: string;
+  name: string;
+  status: string;
+  threshold?: number;
+  vocabulary_size?: number;
+  metadata?: {
+    architecture?: string;
+    config?: { sequence_length?: number; embedding_dim?: number; hidden_dim?: number; layers?: number; heads?: number };
+    training_summary?: { test_recall?: number; test_false_alarm_rate?: number; best_epoch?: number };
+  };
+};
 type EventItem = {
   position: number;
   total: number;
@@ -187,6 +198,15 @@ export default function App() {
         </div>
 
         {error && <div className="mb-5 flex items-center gap-2 rounded-lg border border-danger/40 bg-danger/10 px-4 py-3 text-sm text-rose-200"><AlertTriangle size={16} />{error}</div>}
+
+        {selectedModel && <div className="mb-5 flex flex-wrap items-center gap-x-6 gap-y-2 rounded-xl border border-line bg-panel/70 px-5 py-3 text-xs text-slate-400">
+          <span className="font-semibold text-slate-200">{selectedModel.name}</span>
+          <span>{selectedModel.metadata?.config?.sequence_length ? `sequence ${selectedModel.metadata.config.sequence_length}` : "331-token vocabulary"}</span>
+          {selectedModel.metadata?.config?.hidden_dim && <span>hidden {selectedModel.metadata.config.hidden_dim}</span>}
+          {selectedModel.metadata?.training_summary?.test_recall !== undefined && <span>test recall {(selectedModel.metadata.training_summary.test_recall * 100).toFixed(1)}%</span>}
+          {selectedModel.metadata?.training_summary?.test_false_alarm_rate !== undefined && <span>test FAR {(selectedModel.metadata.training_summary.test_false_alarm_rate * 100).toFixed(2)}%</span>}
+          {selectedModel.metadata?.training_summary?.best_epoch && <span>best epoch {selectedModel.metadata.training_summary.best_epoch}</span>}
+        </div>}
 
         <div className="mb-5 grid grid-cols-2 gap-3 lg:grid-cols-5">
           <Metric label="Replay status" value={status.toUpperCase()} tone={status === "running" ? "text-signal" : "text-slate-100"} />

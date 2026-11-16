@@ -1,0 +1,28 @@
+{
+  "dtype": "int16",
+  "format_version": "sequence-memmap-v1",
+  "hardware": {
+    "cuda_available": false,
+    "machine": "arm64",
+    "mps_available": true,
+    "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+    "processor": "arm",
+    "python": "3.14.3 (main, Feb  3 2026, 15:32:20) [Clang 17.0.0 (clang-1700.6.3.2)]",
+    "torch_version": "2.15.0"
+  },
+  "padding_id": 0,
+  "python_version": "3.14.3 (main, Feb  3 2026, 15:32:20) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "random_seed": null,
+  "samples": 1530,
+  "sequence_length": 512,
+  "source_dataset": "/Users/sheshasai1837/Downloads/XRan_DS/EN2025",
+  "source_inventory": "/Users/sheshasai1837/Documents/Code/projects/ps-ran/inventory.csv",
+  "split_rule": "sha256(sample_id) integer mod 100: train < 70, validation < 85, test >= 85",
+  "splits": {
+    "test": 236,
+    "train": 1059,
+    "validation": 235
+  },
+  "vocabulary_file": "/Users/sheshasai1837/Documents/Code/projects/ps-ran/models/bag_of_apis/vocabulary.json",
+  "vocabulary_size": 331
+}

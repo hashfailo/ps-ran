@@ -1,0 +1,15 @@
+{
+  "architecture": "gru",
+  "threshold": 0.7797483652830122,
+  "samples": 1530,
+  "splits": {
+    "test": 236,
+    "train": 1059,
+    "validation": 235
+  },
+  "validation_benign_count": 156,
+  "test_true_positive": 61,
+  "test_false_positive": 3,
+  "test_recall": 0.6703296703296703,
+  "test_false_alarm_rate": 0.020689655172413793
+}

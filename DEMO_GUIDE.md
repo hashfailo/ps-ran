@@ -4,8 +4,8 @@
 
 This is a replay of recorded EN2025 CAPE reports. It is not live endpoint
 monitoring and it never executes a sample. The dashboard receives one stored
-API event at a time, updates the persisted Bag-of-APIs model, and marks the
-first threshold crossing.
+API event at a time, updates the selected persisted model, and marks the first
+threshold crossing.
 
 The activity counters are observable telemetry. They are not claims of
 physical file damage, successful encryption, or guaranteed file identity.
@@ -15,31 +15,34 @@ physical file damage, successful encryption, or guaranteed file identity.
 From the repository root:
 
 ```bash
-# one-time setup
-python3 -m venv .venv-demo
-.venv-demo/bin/python -m pip install -r requirements-demo.txt
+# one-time local Apple Silicon setup
+python3 -m venv .venv-neural
+.venv-neural/bin/python -m pip install -r requirements-neural.txt
 cd web/frontend
 npm install
 npm run build
 cd ../..
 
-# build the model once, if models/bag_of_apis is absent
-.venv-demo/bin/python -m scripts.train_bag_of_apis \
+# build the Bag-of-APIs model once, if absent
+.venv-neural/bin/python -m scripts.train_bag_of_apis \
   /path/to/EN2025 \
   --inventory ./inventory.csv \
   --output-dir ./models/bag_of_apis
 
 # start the backend
 EN2025_ROOT=/path/to/EN2025 \
-.venv-demo/bin/python -m uvicorn web.backend:app --host 127.0.0.1 --port 8000
+EN2025_INVENTORY=inventory.csv \
+NEURAL_MODEL_ROOT=models \
+.venv-neural/bin/python -m uvicorn web.backend:app --host 127.0.0.1 --port 8000
 ```
 
 Open <http://127.0.0.1:8000>.
 
 ## Recommended walkthrough
 
-1. Select model **Bag of APIs**. The neural architecture entries are visibly
-   unavailable unless their optional implementations are added.
+1. Select any trained model: **Bag of APIs**, **XRan-style CNN**, **GRU**, or
+   **Causal Transformer**. The dashboard shows the selected model's sequence
+   configuration and held-out test metrics.
 2. Select a smaller benign report first, such as sample
    `001b7fa6b0ef402d2ab4f10403d6e9867c9d9c6493b99392f2cdb63bc2631422`.
 3. Use a replay speed around 20 events/sec and select **Start replay**.
@@ -58,7 +61,9 @@ not model predictions.
 ## What to say during review
 
 - The model is loaded from `models/bag_of_apis/model.json`; the web server
-  does not retrain on startup.
+  or the selected neural artifact; the web server does not retrain on startup.
+- Neural artifacts were trained locally on Apple M1 MPS and are loaded on
+  demand. Only the selected neural model is cached by the backend.
 - The threshold is calibrated from validation benign traces at a fixed 1%
   validation false-alarm target.
 - The test split is held out by sample hash during training.

@@ -236,14 +236,34 @@ The neural workflow is optional and does not change the Bag-of-APIs workflow.
 Install its dependencies with:
 
 ```bash
-python3 -m pip install -r requirements-neural.txt
+python3 -m venv .venv-neural
+.venv-neural/bin/python -m pip install -r requirements-neural.txt
 ```
+
+On the validated local machine this produced Python 3.14.3, PyTorch 2.15.0,
+NumPy 2.5.5, ijson 3.6.0, and JupyterLab 4.6.6. The machine is an arm64
+Apple M1 with 8 GiB unified memory. `--device auto` selected MPS and a real
+matrix multiplication smoke test completed successfully. The scripts fall
+back to CPU if MPS is unavailable.
+
+Recommended conservative starting configurations for an 8 GiB M1 are:
+
+| Model | Sequence length | Batch size | Embedding | Hidden | Layers | Heads |
+|---|---:|---:|---:|---:|---:|---:|
+| XRan-style CNN | 512 | 16 | 32 | 64 | 1 | N/A |
+| GRU | 512 | 8–16 | 32 | 64 | 1 | N/A |
+| Causal Transformer | 256–512 | 4–8 | 32 | 64 | 1 | 4 |
+
+Train models sequentially, not concurrently. Monitor `memory_pressure` and
+`df -h .`; keep at least several GiB free for checkpoints and macOS swap.
+The preprocessing output is fixed-width and memory-mapped, so the 22 GiB raw
+EN2025 directory is never loaded into RAM.
 
 Preprocess reports once into a compact, fixed-width memmapped dataset. Reports
 are streamed one at a time; the raw dataset is never assembled in memory:
 
 ```bash
-python3 scripts/preprocess_neural_dataset.py \
+.venv-neural/bin/python scripts/preprocess_neural_dataset.py \
   /path/to/EN2025 \
   --inventory inventory.csv \
   --output-dir outputs/neural_dataset \
@@ -255,11 +275,11 @@ Silicon MPS, or CPU. Checkpoints are written every epoch and
 `--resume` continues from an interrupted checkpoint:
 
 ```bash
-python3 scripts/train_xran_style_cnn.py outputs/neural_dataset \
+.venv-neural/bin/python scripts/train_xran_style_cnn.py outputs/neural_dataset \
   --output-dir models/xran_style_cnn --device auto --batch-size 16 --epochs 8
-python3 scripts/train_gru.py outputs/neural_dataset \
+.venv-neural/bin/python scripts/train_gru.py outputs/neural_dataset \
   --output-dir models/gru --device auto --batch-size 16 --epochs 8
-python3 scripts/train_causal_transformer.py outputs/neural_dataset \
+.venv-neural/bin/python scripts/train_causal_transformer.py outputs/neural_dataset \
   --output-dir models/causal_transformer --device auto --batch-size 8 \
   --embedding-dim 32 --hidden-dim 64 --layers 1 --heads 4 --epochs 8
 ```
@@ -267,25 +287,36 @@ python3 scripts/train_causal_transformer.py outputs/neural_dataset \
 For example, resume with:
 
 ```bash
-python3 scripts/train_gru.py outputs/neural_dataset \
+.venv-neural/bin/python scripts/train_gru.py outputs/neural_dataset \
   --output-dir models/gru --resume models/gru/last_checkpoint.pt --epochs 12
 ```
 
 Validate a downloaded model without retraining:
 
 ```bash
-python3 scripts/validate_neural_model.py models/gru \
+.venv-neural/bin/python -m scripts.validate_neural_model models/gru \
   /path/to/EN2025 \
   --inventory inventory.csv --sample-id 7b4c442ae9ef60b2f04dd893ab0a62385a2f016d4ad82793317b50b9fcd12e1e
 ```
+
+Evaluate all saved neural models on the fixed test split:
+
+```bash
+.venv-neural/bin/python -m scripts.evaluate_neural_models \
+  outputs/neural_dataset --models-root models --device mps
+```
+
+This writes `evaluation.json` in each neural model directory and
+`outputs/neural_model_comparison.json`.
 
 Each artifact records the architecture, dimensions, sequence length, seed,
 dependency versions, hardware/device, exact split rule, validation threshold,
 and test summary. Copy the complete model directory to `models/gru`,
 `models/xran_style_cnn`, or `models/causal_transformer`; the existing FastAPI
 backend discovers and loads it without retraining. The optional
-[`notebooks/colab_train_neural.ipynb`](notebooks/colab_train_neural.ipynb)
-uses the same scripts and supports Colab GPU acceleration.
+notebook in `notebooks/` is retained for portability, but the validated
+training run and showcase deployment use only the local Apple Silicon
+environment described above.
 
 ## Responsible use
 

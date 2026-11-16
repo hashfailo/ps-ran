@@ -1,0 +1,15 @@
+{
+  "architecture": "causal_transformer",
+  "threshold": 0.9850924700498581,
+  "samples": 1530,
+  "splits": {
+    "test": 236,
+    "train": 1059,
+    "validation": 235
+  },
+  "validation_benign_count": 156,
+  "test_true_positive": 64,
+  "test_false_positive": 6,
+  "test_recall": 0.7032967032967034,
+  "test_false_alarm_rate": 0.041379310344827586
+}

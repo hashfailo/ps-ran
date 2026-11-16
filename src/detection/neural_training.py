@@ -6,9 +6,11 @@ import json
 import importlib.metadata
 import os
 import random
+import resource
 import shutil
 import subprocess
 import sys
+import time
 from pathlib import Path
 from typing import Any
 
@@ -78,16 +80,21 @@ def _set_seed(seed: int) -> None:
         torch.cuda.manual_seed_all(seed)
 
 
-def _scores(model, loader, device: str) -> tuple[list[float], list[int]]:
+def _scores(model, loader, device: str, criterion=None) -> tuple[list[float], list[int], float]:
     torch, _ = require_torch()
     scores: list[float] = []
     labels: list[int] = []
+    total_loss = 0.0
+    batches = 0
     with torch.no_grad():
         for sequences, lengths, target in loader:
             logits = model(sequences.to(device), lengths.to(device))
+            if criterion is not None:
+                total_loss += float(criterion(logits, target.to(device)).cpu())
+                batches += 1
             scores.extend(torch.softmax(logits, dim=1)[:, 1].detach().cpu().tolist())
             labels.extend(target.tolist())
-    return scores, labels
+    return scores, labels, total_loss / max(1, batches)
 
 
 def train_neural(
@@ -140,15 +147,20 @@ def train_neural(
     optimizer = torch.optim.AdamW(model.parameters(), lr=learning_rate)
     criterion = torch.nn.CrossEntropyLoss()
     start_epoch = 0
+    best_validation_loss = float("inf")
+    history: list[dict[str, Any]] = []
     if resume:
         checkpoint = torch.load(resume, map_location=selected_device, weights_only=False)
         model.load_state_dict(checkpoint["model_state"])
         optimizer.load_state_dict(checkpoint["optimizer_state"])
         start_epoch = int(checkpoint["epoch"])
+        best_validation_loss = float(checkpoint.get("best_validation_loss", float("inf")))
+        history = list(checkpoint.get("history", []))
         if checkpoint.get("seed") is not None:
             _set_seed(int(checkpoint["seed"]))
 
     for epoch in range(start_epoch, epochs):
+        started = time.monotonic()
         model.train()
         total_loss = 0.0
         for sequences, lengths, target in train_loader:
@@ -159,25 +171,43 @@ def train_neural(
             torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
             optimizer.step()
             total_loss += float(loss.detach().cpu())
+        model.eval()
+        _, _, validation_loss = _scores(model, validation_loader, selected_device, criterion)
+        epoch_record = {
+            "epoch": epoch + 1,
+            "train_loss": total_loss / max(1, len(train_loader)),
+            "validation_loss": validation_loss,
+            "duration_seconds": time.monotonic() - started,
+            "max_rss": resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,
+        }
+        history.append(epoch_record)
         checkpoint_data = {
             "epoch": epoch + 1,
             "model_state": model.state_dict(),
             "optimizer_state": optimizer.state_dict(),
             "seed": seed,
+            "best_validation_loss": min(best_validation_loss, validation_loss),
+            "history": history,
         }
         torch.save(checkpoint_data, output_dir / "last_checkpoint.pt")
+        if validation_loss < best_validation_loss:
+            best_validation_loss = validation_loss
+            torch.save(checkpoint_data, output_dir / "best_checkpoint.pt")
         if (epoch + 1) % checkpoint_every == 0:
             torch.save(checkpoint_data, output_dir / f"checkpoint_epoch_{epoch + 1:04d}.pt")
         print(
-            f"epoch {epoch + 1}/{epochs} loss={total_loss / max(1, len(train_loader)):.4f}",
+            f"epoch {epoch + 1}/{epochs} train_loss={epoch_record['train_loss']:.4f} "
+            f"val_loss={validation_loss:.4f} duration={epoch_record['duration_seconds']:.1f}s",
             file=sys.stderr,
         )
 
+    best_checkpoint = torch.load(output_dir / "best_checkpoint.pt", map_location=selected_device, weights_only=False)
+    model.load_state_dict(best_checkpoint["model_state"])
     model.eval()
-    validation_scores, validation_labels = _scores(model, validation_loader, selected_device)
+    validation_scores, validation_labels, _ = _scores(model, validation_loader, selected_device)
     benign_scores = [score for score, label in zip(validation_scores, validation_labels) if label == 0]
     threshold = _quantile(benign_scores, 0.99)
-    test_scores, test_labels = _scores(model, test_loader, selected_device)
+    test_scores, test_labels, _ = _scores(model, test_loader, selected_device)
     positives = sum(label == 1 for label in test_labels)
     benign = sum(label == 0 for label in test_labels)
     true_positive = sum(label == 1 and score >= threshold for score, label in zip(test_scores, test_labels))
@@ -221,9 +251,12 @@ def train_neural(
         },
         "git_revision": _version(["git", "rev-parse", "HEAD"]),
         "training_summary": summary,
+        "history": history,
+        "best_epoch": int(best_checkpoint["epoch"]),
     }
     (output_dir / "metadata.json").write_text(json.dumps(metadata, indent=2) + "\n", encoding="utf-8")
     (output_dir / "training_summary.json").write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
+    (output_dir / "training_history.json").write_text(json.dumps(history, indent=2) + "\n", encoding="utf-8")
     shutil.copy2(dataset_dir / "manifest.json", output_dir / "split_manifest.json")
     print(json.dumps(summary, indent=2))
     return summary
